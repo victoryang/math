@@ -1,0 +1,530 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>2.2 数项级数的基本概念</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+
+<div id="container">
+<center><h1>2.2 数项级数的基本概念</h1></center>
+
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、数项级数的定义及敛散性</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定义：</b>设给定一数列<img align="absmiddle" height="24" src="images/0202/image001.gif" width="31"/>：<img align="absmiddle" height="24" src="images/0202/image002.gif" width="113"/>，则称表达式
+<center>
+<img align="absmiddle" height="24" src="images/0202/image003.gif" width="159"/>
+</center>
+为数项级数，简称级数．记为<img align="absmiddle" height="45" src="images/0202/image004.gif" width="39"/>，即
+<center>
+<img align="absmiddle" height="45" src="images/0202/image005.gif" width="200"/>，</center>
+其中第<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>项<img align="absmiddle" height="24" src="images/0202/image007.gif" width="19"/>称为级数的通项，也称为一般项．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<b>注意</b>：级数一定是由无穷多项相加而成的式子．<br clear="none"/>
+　　例如：<img align="absmiddle" height="41" src="images/0202/image008.gif" width="161"/>是级数，<img align="absmiddle" height="41" src="images/0202/image009.gif" width="103"/>不是级数；<br clear="none"/>
+　　　　　<img align="absmiddle" height="19" src="images/0202/image010.gif" width="136"/>是级数，<img align="absmiddle" height="19" src="images/0202/image011.gif" width="79"/>不是级数．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　由中学学过的无穷递缩等比数列的求和公式可得
+<center>
+<img align="absmiddle" height="61" src="images/0202/image012.gif" width="237"/>，</center>
+　　可见，这里的“无穷项求和”的结果等于一个数．<br clear="none"/>
+　　而对于级数
+<center>
+<img align="absmiddle" height="19" src="images/0202/image010.gif" width="136"/>，</center>
+　　从直观上可知，这里的“无穷项求和”不等于任何数．<br clear="none"/>
+　　接下来要研究的问题是：“无穷项求和”的运算如何进行？<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定义：</b>记级数<img align="absmiddle" height="45" src="images/0202/image013.gif" width="207"/>的前<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>项和为
+<center>
+<img align="absmiddle" height="24" src="images/0202/image014.gif" width="171"/>，</center>
+　　显然　<img align="absmiddle" height="45" src="images/0202/image015.gif" width="277"/>．<br clear="none"/>
+　　如果<img align="absmiddle" height="29" src="images/0202/image016.gif" width="72"/>（常数），则称级数<img align="absmiddle" height="45" src="images/0202/image017.gif" width="39"/>收敛，并称S为级数<img align="absmiddle" height="45" src="images/0202/image017.gif" width="39"/>的和，记作<img align="absmiddle" height="45" src="images/0202/image018.gif" width="60"/>．<br clear="none"/>
+　　如果<img align="absmiddle" height="29" src="images/0202/image019.gif" width="44"/>不存在，则称级数<img align="absmiddle" height="45" src="images/0202/image017.gif" width="39"/>发散．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_02_01" class="part1_4">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.1</b>　讨论等比级数（又称为几何级数）
+<center>
+<img align="absmiddle" height="45" src="images/0202/image020.gif" width="252"/>
+</center>
+的敛散性．其中<img align="absmiddle" height="19" src="images/0202/image021.gif" width="39"/>，<img align="absmiddle" height="17" src="images/0202/image022.gif" width="13"/>叫做级数的公比．<br clear="none"/>
+　　<b>解　</b>
+<br clear="none"/>
+　　(1)如果<img align="absmiddle" height="27" src="images/0202/image023.gif" width="40"/>，级数的前<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>项和
+<center>
+<img align="absmiddle" height="47" src="images/0202/image024.gif" width="428"/>
+</center>
+　　当<img align="absmiddle" height="27" src="images/0202/image025.gif" width="40"/>时，由于<img align="absmiddle" height="31" src="images/0202/image026.gif" width="71"/>，从而<img align="absmiddle" height="44" src="images/0202/image027.gif" width="93"/>，因此这时级数收敛，其和为<img align="absmiddle" height="44" src="images/0202/image028.gif" width="36"/>．<br clear="none"/>
+　　当<img align="absmiddle" height="27" src="images/0202/image029.gif" width="40"/>，由于<img align="absmiddle" height="31" src="images/0202/image030.gif" width="75"/>，从而<img align="absmiddle" height="29" src="images/0202/image031.gif" width="73"/>，这时级数发散．<br clear="none"/>
+　　(2)如果<img align="absmiddle" height="27" src="images/0202/image032.gif" width="40"/>，则当<img align="absmiddle" height="21" src="images/0202/image033.gif" width="36"/>时，级数的前<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>项和<img align="absmiddle" height="24" src="images/0202/image034.gif" width="87"/>，因此级数发散；当<img align="absmiddle" height="21" src="images/0202/image035.gif" width="45"/>时，级数成为
+<center>
+<img align="absmiddle" height="16" src="images/0202/image036.gif" width="113"/>，<br clear="none"/>
+<img align="absmiddle" height="48" src="images/0202/image037.gif" width="127"/>，</center>
+　　显然<img align="absmiddle" height="24" src="images/0202/image038.gif" width="20"/>随着<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>的增大，总是在<img align="absmiddle" height="15" src="images/0202/image039.gif" width="13"/>或零上来回跳动，从而<img align="absmiddle" height="24" src="images/0202/image038.gif" width="20"/>的极限不存在，这时级数也是发散的．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_5" id="part1_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>综上所述</b>，我们得到：等比级数<img align="absmiddle" height="45" src="images/0202/image040.gif" width="57"/>的公比为<img align="absmiddle" height="17" src="images/0202/image022.gif" width="13"/>，则当<img align="absmiddle" height="27" src="images/0202/image025.gif" width="40"/>时，级数收敛，且收敛于<img align="absmiddle" height="44" src="images/0202/image028.gif" width="36"/>；如果<img align="absmiddle" height="27" src="images/0202/image041.gif" width="40"/>，则级数发散．简记为
+<center>
+<table border="0" width="200">
+<tr>
+<td colspan="1" rowspan="2" width="70">
+<b>
+<img align="absmiddle" height="36" src="images/0202/image042.gif" width="65"/>
+</b>
+</td>
+<td colspan="1" rowspan="2" width="14">
+<b>
+<img align="absmiddle" height="69" src="images/0202/image109.gif" width="10"/>
+</b>
+</td>
+<td colspan="1" rowspan="1" width="102">
+<b>
+<img align="absmiddle" height="32" src="images/0202/image110.gif" width="84"/>
+</b>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">发散，<b>
+<img align="absmiddle" height="29" src="images/0202/image111.gif" width="39"/>
+</b>
+</td>
+</tr>
+</table>
+</center>
+可记忆为
+<center>
+<table border="0" width="217">
+<tr>
+<td colspan="1" rowspan="2" width="68">
+<b>
+<img align="absmiddle" height="36" src="images/0202/image042.gif" width="65"/>
+</b>
+</td>
+<td colspan="1" rowspan="2" width="11">
+<b>
+<img align="absmiddle" height="69" src="images/0202/image109.gif" width="10"/>
+</b>
+</td>
+<td colspan="1" rowspan="1" width="83">
+<b>
+<img align="absmiddle" height="39" src="images/0202/image113.gif" width="50"/>
+</b>
+</td>
+<td colspan="1" rowspan="1" width="37">
+<b>
+<img align="absmiddle" height="32" src="images/0202/image112.gif" width="37"/>
+</b>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">发散，<b>
+<img align="absmiddle" height="29" src="images/0202/image111.gif" width="39"/>
+</b>
+</td>
+<td colspan="1" rowspan="1"> </td>
+</tr>
+</table>
+</center>
+　　由此公式，我们可以很快地得出：<br clear="none"/>
+　　<img align="absmiddle" height="67" src="images/0202/image044.gif" width="345"/>，级数收敛．<br clear="none"/>
+　　<img align="absmiddle" height="80" src="images/0202/image045.gif" width="373"/>，级数收敛．<br clear="none"/>
+　　<img align="absmiddle" height="45" src="images/0202/image046.gif" width="39"/>发散．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_6" id="part1_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.2</b>　判定下列级数的敛散性：<br clear="none"/>
+　　(1) <img align="absmiddle" height="45" src="images/0202/image047.gif" width="32"/>；　　(2) <img align="absmiddle" height="44" src="images/0202/image048.gif" width="264"/>．<br clear="none"/>
+　　<b>解</b>
+<br clear="none"/>
+　　(1)∵<img align="absmiddle" height="24" src="images/0202/image049.gif" width="47"/>，<br clear="none"/>
+　　　 ∴<img align="absmiddle" height="24" src="images/0202/image050.gif" width="137"/>
+<br clear="none"/>
+　　　　<img align="absmiddle" height="41" src="images/0202/image051.gif" width="191"/>，<br clear="none"/>
+　　从而<img align="absmiddle" height="41" src="images/0202/image052.gif" width="164"/>，故级数<img align="absmiddle" height="45" src="images/0202/image047.gif" width="32"/>发散．<br clear="none"/>
+　　(2)由于
+<center>
+<img align="absmiddle" height="44" src="images/0202/image053.gif" width="255"/>，</center>
+　　所以
+<center>
+<img align="absmiddle" height="45" src="images/0202/image054.gif" width="400"/>．</center>
+　　从而
+<center>
+<img align="absmiddle" height="45" src="images/0202/image055.gif" width="173"/>，</center>
+　　故级数收敛，它的和是1．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_7" id="part1_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.3</b>　判定级数<img align="absmiddle" height="45" src="images/0202/image056.gif" width="83"/>的敛散性．<br clear="none"/>
+　　<b>解</b>　级数的前<img align="absmiddle" height="15" src="images/0202/image006.gif" width="13"/>项和<br clear="none"/>
+　　<img align="absmiddle" height="41" src="images/0202/image057.gif" width="232"/>
+<br clear="none"/>
+　　　 <img align="absmiddle" height="45" src="images/0202/image058.gif" width="263"/>，<br clear="none"/>
+　　因为
+<center>
+<img align="absmiddle" height="29" src="images/0202/image059.gif" width="165"/>，</center>
+　　所以级数发散．<br clear="none"/>
+　　也可以这样化简<img align="absmiddle" height="24" src="images/0202/image038.gif" width="20"/>：<br clear="none"/>
+　　<img align="absmiddle" height="41" src="images/0202/image057.gif" width="232"/>
+<br clear="none"/>
+　　　 <img align="absmiddle" height="23" src="images/0202/image060.gif" width="419"/>
+<br clear="none"/>
+　　<strong>备注：</strong>这里用到初等数学中的公式：<img align="absmiddle" height="23" src="images/0202/image061.gif" width="121"/>，<img align="absmiddle" height="41" src="images/0202/image062.gif" width="108"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、级数的基本性质和收敛的必要条件</h2>
+<br clear="none"/>
+　　<b>性质1　</b>若<img align="absmiddle" height="19" src="images/0202/image063.gif" width="16"/>为非零常数，则<img align="absmiddle" height="45" src="images/0202/image064.gif" width="40"/>与<img align="absmiddle" height="45" src="images/0202/image065.gif" width="51"/>同时收敛或同时发散，且在收敛时，有
+<center>
+<img align="absmiddle" height="45" src="images/0202/image066.gif" width="113"/>．</center>
+　　此性质说明：级数的每一项同乘一个不为零的常数后，它的收敛性不会改变．<br clear="none"/>
+<b>　　性质2　</b>设级数<img align="absmiddle" height="45" src="images/0202/image064.gif" width="40"/>与<img align="absmiddle" height="45" src="images/0202/image067.gif" width="39"/>都收敛，则<img align="absmiddle" height="45" src="images/0202/image068.gif" width="79"/>也收敛，且
+<center>
+<img align="absmiddle" height="45" src="images/0202/image069.gif" width="175"/>．</center>
+　　此性质说明，两个收敛级数可以逐项相加与逐项相减．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>性质3　</b>在级数中去掉、加上或改变前面有限项的值，不会改变级数的敛散性．<br clear="none"/>
+　　<b>性质4（级数收敛的必要条件）　</b>若级数<img align="absmiddle" height="45" src="images/0202/image064.gif" width="40"/>收敛，则它的一般项<img align="absmiddle" height="24" src="images/0202/image007.gif" width="19"/>趋于零，即
+<center>
+<img align="absmiddle" height="29" src="images/0202/image070.gif" width="69"/>．</center>
+　　此性质说明，一般项的极限为零是级数收敛的必要条件．<br clear="none"/>
+　　<b>推论：</b>若<img align="absmiddle" height="29" src="images/0202/image071.gif" width="69"/>，则级数<img align="absmiddle" height="45" src="images/0202/image064.gif" width="40"/>发散．<br clear="none"/>
+　　<b>注意</b>：级数的一般项趋于零并不是级数收敛的充分条件．有些级数虽然一般项趋于零，但仍然是发散的．将在后面学习的调和级数就是这样的例子．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.4</b>　判断级数<img align="absmiddle" height="49" src="images/0202/image072.gif" width="67"/>的敛散性．<br clear="none"/>
+　　<b>解</b>　<img align="absmiddle" height="49" src="images/0202/image073.gif" width="275"/>，而级数<img align="absmiddle" height="49" src="images/0202/image074.gif" width="56"/>收敛，所以由性质1知<img align="absmiddle" height="49" src="images/0202/image072.gif" width="67"/>收敛．<br clear="none"/>
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.5</b>　判定级数<img align="absmiddle" height="53" src="images/0202/image075.gif" width="109"/>的敛散性，若收敛求此级数的和．<br clear="none"/>
+　　<b>解</b>　因为级数<img align="absmiddle" height="49" src="images/0202/image076.gif" width="153"/>收敛，且
+<center>
+<img align="absmiddle" height="85" src="images/0202/image077.gif" width="287"/>，</center>
+　　又级数<img align="absmiddle" height="45" src="images/0202/image078.gif" width="43"/>也收敛，且<img align="absmiddle" height="83" src="images/0202/image079.gif" width="119"/>；所以由性质2，
+<center>
+<img align="absmiddle" height="53" src="images/0202/image080.gif" width="200"/>．</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.6</b>　判定级数<img align="absmiddle" height="71" src="images/0202/image081.gif" width="81"/>的敛散性．<br clear="none"/>
+　　<b>解</b>　级数的一般项为<img align="absmiddle" height="69" src="images/0202/image082.gif" width="95"/>，因为
+<center>
+<img align="absmiddle" height="69" src="images/0202/image083.gif" width="193"/>，</center>
+　　所以级数发散．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_1" id="part3_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>三、正项级数的敛散性判别</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定义：</b>设数项级数<img align="absmiddle" height="45" src="images/0202/image064.gif" width="40"/>中的每一项都是非负的，即<img align="absmiddle" height="24" src="images/0202/image084.gif" width="45"/>（<img align="absmiddle" height="21" src="images/0202/image085.gif" width="67"/>），则称该级数是正项级数．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定理（比较判别法）：</b>设<img align="absmiddle" height="45" src="images/0202/image086.gif" width="39"/>，<img align="absmiddle" height="45" src="images/0202/image067.gif" width="39"/>是两个正项级数，若<img align="absmiddle" height="24" src="images/0202/image087.gif" width="49"/>，则<br clear="none"/>
+　　(1) 当<img align="absmiddle" height="45" src="images/0202/image067.gif" width="39"/>收敛时，<img align="absmiddle" height="45" src="images/0202/image086.gif" width="39"/>收敛；<br clear="none"/>
+　　(2) 当<img align="absmiddle" height="45" src="images/0202/image086.gif" width="39"/>发散时，<img align="absmiddle" height="45" src="images/0202/image067.gif" width="39"/>发散．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　有了这个定理，在判断一个正项级数的敛散性时，可以利用另一个收敛性为已知的正项级数来比较．<br clear="none"/>
+　　形如<img align="absmiddle" height="45" src="images/0202/image088.gif" width="44"/>的级数称为<img align="absmiddle" height="17" src="images/0202/image089.gif" width="16"/>－级数，可以证明<img align="absmiddle" height="17" src="images/0202/image089.gif" width="16"/>－级数当<img align="absmiddle" height="21" src="images/0202/image090.gif" width="37"/>时收敛，当<img align="absmiddle" height="21" src="images/0202/image091.gif" width="37"/>时发散．其中<img align="absmiddle" height="21" src="images/0202/image092.gif" width="37"/>时的级数<img align="absmiddle" height="45" src="images/0202/image093.gif" width="35"/>也称为调和级数．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.7</b>　判定下列级数的敛散性：<br clear="none"/>
+　　(1) <img align="absmiddle" height="45" src="images/0202/image093.gif" width="35"/>；  (2) <img align="absmiddle" height="45" src="images/0202/image094.gif" width="43"/>；  (3) <img align="absmiddle" height="45" src="images/0202/image095.gif" width="47"/>
+<br clear="none"/>
+　　<b>解</b>
+<br clear="none"/>
+　　(1)因为<img align="absmiddle" height="21" src="images/0202/image092.gif" width="37"/>，是调和级数，所以级数<img align="absmiddle" height="45" src="images/0202/image093.gif" width="35"/>发散．<br clear="none"/>
+　　(2)因为<img align="absmiddle" height="21" src="images/0202/image096.gif" width="63"/>，所以级数<img align="absmiddle" height="45" src="images/0202/image094.gif" width="43"/>收敛．<br clear="none"/>
+　　(3)因为<img align="absmiddle" height="41" src="images/0202/image097.gif" width="65"/>，所以级数<img align="absmiddle" height="45" src="images/0202/image095.gif" width="47"/>发散．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_3" id="part3_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>2.2.8</b>
+<b>　</b>判定下列级数的敛散性：<br clear="none"/>
+　　(1)<img align="absmiddle" height="45" src="images/0202/image098.gif" width="43"/>；　　(2)<img align="absmiddle" height="48" src="images/0202/image099.gif" width="85"/>；　　(3)<img align="absmiddle" height="45" src="images/0202/image100.gif" width="49"/>．<br clear="none"/>
+　　<b>解</b>
+<br clear="none"/>
+　　(1) ∵<img align="absmiddle" height="21" src="images/0202/image101.gif" width="53"/>，∴<img align="absmiddle" height="41" src="images/0202/image102.gif" width="60"/>，<img align="absmiddle" height="21" src="images/0202/image103.gif" width="68"/>，而<img align="absmiddle" height="45" src="images/0202/image094.gif" width="43"/>收敛，故<img align="absmiddle" height="45" src="images/0202/image098.gif" width="43"/>收敛．<br clear="none"/>
+　　(2) ∵<img align="absmiddle" height="31" src="images/0202/image104.gif" width="351"/>，<br clear="none"/>
+　　　　∴<img align="absmiddle" height="48" src="images/0202/image105.gif" width="115"/>，而<img align="absmiddle" height="45" src="images/0202/image106.gif" width="103"/>发散，所以<img align="absmiddle" height="48" src="images/0202/image099.gif" width="85"/>发散．<br clear="none"/>
+　　(3) ∵<img align="absmiddle" height="19" src="images/0202/image107.gif" width="53"/>，∴<img align="absmiddle" height="41" src="images/0202/image108.gif" width="59"/>，而<img align="absmiddle" height="45" src="images/0202/image093.gif" width="35"/>发散，所以<img align="absmiddle" height="45" src="images/0202/image100.gif" width="49"/>发散．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_4" id="part3_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">(1)数项级数及其收敛与发散的概念；<br clear="none"/>
+(2)数项级数敛散性的常用判别法：<br clear="none"/>
+　　①等比级数的敛散性判定及收敛时的求和．要求掌握有关的结论和公式．<br clear="none"/>
+　　②<img align="absmiddle" height="17" src="images/0202/image089.gif" width="16"/>－级数的敛散性．要求掌握有关的结论．<br clear="none"/>
+　　③对于正项级数，在利用比较判别法时，常以<img align="absmiddle" height="17" src="images/0202/image089.gif" width="16"/>－级数作为参照．<br clear="none"/>
+　　④当以上判别方法都不适用时，考虑用敛散性的定义进行判别．<br clear="none"/>
+　　⑤利用级数收敛的必要条件只能说明，一般项极限不为零的级数发散，但一般项极限为零的级数未必收敛．<br clear="none"/>
+<strong>重点题型：</strong>判断级数的敛散性．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_02_01" class="popup-questions" knowid="know_j_02_01" syncpart="part1_4">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="d" score="100">
+<p>4．（单选题）<img src="images/0202/ch0202_clip_image001.gif" width="51" height="47" align="absmiddle">=（　　　）</p>
+<ul class="options">
+     <li code="a">A.4</li>
+	 <li code="b">B.5</li>
+	 <li code="c">C.10</li>
+	 <li code="d">D.20</li>
+</ul>
+<div class="answer">
+<p>【答案】D</p>
+<p>【解析】<img src="images/0202/ch0202_clip_image002.gif" width="131" height="64" align="texttop"></p>
+<p>【知识点】<strong>等比级数</strong></p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>
+

@@ -1,0 +1,312 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>6.4 解线性方程组的消元法</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>6.4 解线性方程组的消元法</h1></center>
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>复习</h2>
+<br clear="none"/>
+<b>　　1、</b>线性方程组可以用它的增广矩阵来描述，与它的增广矩阵是一一对应的．<br clear="none"/>
+　　例如，线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0604/image001.gif" width="128"/>
+</center>
+　　对应的增广矩阵是
+<center>
+<img align="absmiddle" height="75" src="images/0604/image002.gif" width="108"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<b>　　2、</b>
+<b>解线性方程组的公式法</b>
+<br clear="none"/>
+<b>　　</b>如果线性方程组满足两个条件：<br clear="none"/>
+　　（1）方程组中未知量的个数等于方程的个数，<br clear="none"/>
+　　（2）系数行列式不为零，<br clear="none"/>
+　　则可以用克莱姆法则中给出的公式解线性方程组．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<b>　　3、解线性方程组的消元法</b>
+<br clear="none"/>
+　　用消元法解线性方程组．<br clear="none"/>
+　　以二元线性方程组<img align="absmiddle" height="53" src="images/0604/image003.gif" width="104"/>为例，设其为方程组（1）．<br clear="none"/>
+　　对换其中两个方程，得方程组（2）：
+<center>
+<img align="absmiddle" height="51" src="images/0604/image004.gif" width="99"/>
+</center>
+　　将方程组（2）中的第二个方程乘以4，得方程组（3）：
+<center>
+<img align="absmiddle" height="51" src="images/0604/image005.gif" width="111"/>
+</center>
+　　将方程组（3）中的第一个方程乘以<img align="absmiddle" height="19" src="images/0604/image006.gif" width="24"/>加到第二个方程上去，得方程组（4）：
+<center>
+<img align="absmiddle" height="51" src="images/0604/image007.gif" width="97"/>
+</center>
+　　在（4）的第二个方程中已消去了<img align="absmiddle" height="24" src="images/0604/image008.gif" width="16"/>，得到<img align="absmiddle" height="24" src="images/0604/image009.gif" width="51"/>，将其代入第一个方程，即可求出<img align="absmiddle" height="24" src="images/0604/image010.gif" width="41"/>．<br clear="none"/>
+　　解题过程中的方程组（1）、（2）、（3）、（4）都是同解方程组．<br clear="none"/>
+　　可见：线性方程组经过下列三种变换得到的新方程组与原方程组是同解的：<br clear="none"/>
+　　（1）交换两个方程；<br clear="none"/>
+　　（2）将某个方程乘以一个不为零的常数；<br clear="none"/>
+　　（3）将某个方程乘以一个数加到另一个方程上去．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_5" id="part1_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_06_02" class="part1_5">
+<br clear="none"/>
+<b>　　设想：</b>
+<br clear="none"/>
+<b>　　</b>解方程组时，在所有与该方程组同解的方程组中，找出最简单的一个，通过它求出原方程组的解．<br clear="none"/>
+<b>　　方法：</b>
+<br clear="none"/>
+　　对线性方程组的增广矩阵作相应的运算，即初等行变换，每变换一次，得到的新矩阵都对应原方程组的一个同解方程组．当增广矩阵变为行最简矩阵时，该行最简矩阵对应的方程组就是我们需要的最简方程组．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_6" id="part1_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.4.1</strong>　解三元线性方程组<img align="absmiddle" height="75" src="images/0604/image011.gif" width="124"/>．<br clear="none"/>
+　　<strong>解</strong>
+<br clear="none"/>
+　　<strong>方法1</strong>　因为方程组中，方程的个数＝未知量的个数＝3，且系数行列式<img align="absmiddle" height="75" src="images/0604/image012.gif" width="171"/>，所以，可用克莱姆法则的公式求解．（解法略）<br clear="none"/>
+　　<strong>方法2</strong>　利用初等行变换．<br clear="none"/>
+　　增广矩阵为<br clear="none"/>
+　　　　　　　　　　　　　　　　　<img align="absmiddle" height="75" src="images/0604/image013.gif" width="105"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　<img align="absmiddle" height="75" src="images/0604/image014.gif" width="444"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="71" src="images/0604/image017.gif" width="339"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="93" src="images/0604/image018.gif" width="185"/>　<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　 <img align="absmiddle" height="167" src="images/0604/image020.gif" width="347"/>
+<br clear="none"/>
+<br clear="none"/>
+　　由此得方程组的解
+<center>
+<img align="absmiddle" height="128" src="images/0604/image022.gif" width="72"/>．</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_7" id="part1_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.4.2</strong>　求解线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0604/image023.gif" width="124"/>．</center>
+　　<strong>解</strong>　对方程组的增广矩阵进行初等行变换，将其变为行最简形．<br clear="none"/>
+　　　　<img align="absmiddle" height="99" src="images/0604/image024.gif" width="116"/>　<img align="absmiddle" height="37" src="images/0604/image025.gif" width="51"/>　<img align="absmiddle" height="75" src="images/0604/image026.gif" width="108"/>
+<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="51" src="images/0604/image027.gif" width="48"/>　<img align="absmiddle" height="75" src="images/0604/image028.gif" width="116"/>
+<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="51" src="images/0604/image029.gif" width="43"/>　<img align="absmiddle" height="75" src="images/0604/image030.gif" width="116"/>
+<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="37" src="images/0604/image031.gif" width="57"/>
+<img align="absmiddle" height="99" src="images/0604/image032.gif" width="112"/>
+<br clear="none"/>
+　　所以原方程组化简为<img align="absmiddle" height="51" src="images/0604/image033.gif" width="88"/>，<br clear="none"/>
+　　故原方程组的通解为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image034.gif" width="85"/>，</center>
+　　其中<img align="absmiddle" height="24" src="images/0604/image035.gif" width="17"/>可以取任意实数，称为方程组的自由未知量．可见方程组有无穷多个解．<br clear="none"/>
+　　<strong>思考：</strong>此题是否可用公式法？请同学们自行分析一下．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_8" id="part1_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　可以算出系数行列式
+<center>
+<img align="absmiddle" height="75" src="images/0604/image036.gif" width="340"/>，</center>
+　　因此不能用克莱姆法则中所给出的公式．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_9" id="part1_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.4.3</strong>　求解线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0604/image037.gif" width="132"/>．</center>
+　　<strong>解</strong>　对方程组的增广矩阵进行初等行变换，将其变为行最简形
+<center>
+<img align="absmiddle" height="75" src="images/0604/image038.gif" width="108"/>
+<img align="absmiddle" height="51" src="images/0604/image039.gif" width="49"/>
+<img align="absmiddle" height="75" src="images/0604/image040.gif" width="104"/>
+</center>
+　　　原方程组化简为
+<center>
+<img align="absmiddle" height="24" src="images/0604/image041.gif" width="96"/>．</center>
+　　　从而原方程组的通解为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image042.gif" width="104"/>，</center>
+　　　其中，<img align="absmiddle" height="24" src="images/0604/image043.gif" width="40"/>可以取任意实数，即为方程组的自由未知量．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_10" id="part1_10">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.4.4</strong>　求解线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0604/image044.gif" width="132"/>．</center>
+　　<strong>解</strong>　<img align="absmiddle" height="75" src="images/0604/image045.gif" width="108"/>
+<img align="absmiddle" height="51" src="images/0604/image046.gif" width="49"/>
+<img align="absmiddle" height="75" src="images/0604/image047.gif" width="123"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="51" src="images/0604/image048.gif" width="43"/>
+<img align="absmiddle" height="75" src="images/0604/image049.gif" width="113"/>
+<img align="absmiddle" height="51" src="images/0604/image050.gif" width="57"/>
+<img align="absmiddle" height="75" src="images/0604/image051.gif" width="116"/>
+<br clear="none"/>
+　　所以原方程组化简为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image052.gif" width="124"/>，</center>
+　　因此方程组无解．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_11" id="part1_11">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.4.5</strong>　试问当<img align="absmiddle" height="19" src="images/0604/image053.gif" width="15"/>为何值时，线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0604/image054.gif" width="123"/>
+</center>
+　　有唯一解？无解？有无穷多组解？并在有无穷多组解时求解．<br clear="none"/>
+　　<strong>解</strong>　方程组的系数矩阵<img align="absmiddle" height="17" src="images/0604/image055.gif" width="16"/>的行列式为<br clear="none"/>
+　　　　<img align="absmiddle" height="77" src="images/0604/image056.gif" width="225"/>　<br clear="none"/>
+　　　　　<img align="absmiddle" height="51" src="images/0604/image057.gif" width="165"/>
+<br clear="none"/>
+　　　　　<img align="absmiddle" height="48" src="images/0604/image058.gif" width="244"/>
+<br clear="none"/>
+　　故由克莱姆法则知，当<img align="absmiddle" height="27" src="images/0604/image059.gif" width="44"/>，即<img align="absmiddle" height="21" src="images/0604/image060.gif" width="63"/>时，方程组有唯一解．<br clear="none"/>
+　　当<img align="absmiddle" height="19" src="images/0604/image061.gif" width="48"/>时，方程组为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image062.gif" width="125"/>，</center>
+　　对其增广矩阵作初等行变换得<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="75" src="images/0604/image063.gif" width="144"/>
+<img align="absmiddle" height="51" src="images/0604/image064.gif" width="51"/>
+<img align="absmiddle" height="75" src="images/0604/image065.gif" width="144"/>
+<br clear="none"/>
+　　　　　　　　　　　　　　　　　　　<img align="absmiddle" height="51" src="images/0604/image066.gif" width="80"/>
+<img align="absmiddle" height="75" src="images/0604/image067.gif" width="132"/>
+<br clear="none"/>
+　　以上矩阵的最后一行相当于方程组中出现了方程
+<center>
+<img align="absmiddle" height="19" src="images/0604/image068.gif" width="36"/>
+</center>
+　　从而原方程组无解．<br clear="none"/>
+　　当<img align="absmiddle" height="19" src="images/0604/image069.gif" width="36"/>时，方程组为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image070.gif" width="105"/>，</center>
+　　即<img align="absmiddle" height="24" src="images/0604/image071.gif" width="101"/>，因此方程组有无穷多个解，其解为
+<center>
+<img align="absmiddle" height="75" src="images/0604/image072.gif" width="104"/>．</center>
+　　其中<img align="absmiddle" height="24" src="images/0604/image073.gif" width="40"/>为自由未知量．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_12" id="part1_12">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">
+消元法解线性方程组具体方法是：对线性方程组的增广矩阵进行初等行变换，转化为行最简矩阵，由行最简矩阵可以方便地求出原方程组的解．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_06_02" class="popup-questions" knowid="know_j_06_02" syncpart="part1_5">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="d" score="100">
+<p>24．（单选题）线性方程组<img src="images/0604/ch0604_clip_image001.gif" width="116" height="65" align="absmiddle">的解为（    ）</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0604/ch0604_clip_image002.gif" alt="" width="55" height="75" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0604/ch0604_clip_image003.gif" alt="" width="55" height="75" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0604/ch0604_clip_image004.gif" alt="" width="55" height="75" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0604/ch0604_clip_image005.gif" alt="" width="55" height="75" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】D</p>
+<p>【解析】<img src="images/0604/ch0604_clip_image002.jpg" alt="" width="478" height="224" align="texttop"></p>
+<p>【知识点】<strong>解线性方程组的消元法</strong></p>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+

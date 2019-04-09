@@ -1,0 +1,706 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>3.1 导数的概念</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+
+<div id="container">
+<center><h1>3.1 导数的概念</h1></center>
+
+<div class="page-part" code="part1" id="part1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>前言</h2>
+<br clear="none"/>
+　　在解决实际问题时，常常需要研究变化的快慢程度即变化率的问题．例如：物体运动的速度，城市人口增长的速度，国民经济增长率，劳动生产率等等，这种变化率反映在数学上，就是微分学的一个基本概念<b>——</b>导数的概念．<br clear="none"/>
+
+　　复习增量的概念．<br clear="none"/>
+　　某一变量的增量等于：变化的终止值 - 变化的起始值．例如：对于函数<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>，当自变量从<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>变到<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>时，自变量的增量为：
+<center>
+<img align="absmiddle" height="24" src="images/0301/image004.gif" width="73"/>，</center>
+　　<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>所对应的函数值是<img align="absmiddle" height="24" src="images/0301/image005.gif" width="41"/>，<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>所对应的函数值是<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>，所以当自变量从<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>变到<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>时，函数相应地从<img align="absmiddle" height="24" src="images/0301/image005.gif" width="41"/>变到<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>，函数的增量为：
+<center>
+<img align="absmiddle" height="27" src="images/0301/image007.gif" width="125"/>．</center>
+　　<strong>注意：</strong>如果<img align="absmiddle" height="24" src="images/0301/image004.gif" width="73"/>改写为<img align="absmiddle" height="24" src="images/0301/image008.gif" width="79"/>，则函数的增量也相应地改写为<img align="absmiddle" height="21" src="images/0301/image009.gif" width="167"/>．<br clear="none"/>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="100" width="460">
+<param name="movie" value="flash/PPT001.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="100" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/PPT001.swf" type="application/x-shockwave-flash" width="460"/>
+</object>
+</center>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、导数概念的引入</h2>
+<br clear="none"/>
+　　<b>引例1</b>　<strong>瞬时速度问题．</strong>
+<br clear="none"/>
+　　设质点在数轴上作变速直线运动，<img align="absmiddle" height="23" src="images/0301/image010.gif" width="55"/>表示时刻<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>质点所处的位置，求<i>
+<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>
+</i>时刻的瞬时速度<img align="absmiddle" height="24" src="images/0301/image013.gif" width="33"/>.<br clear="none"/>
+<b>　　<img align="absmiddle" height="23" src="images/0301/image010.gif" width="55"/>
+</b>给出了质点的位置<img align="absmiddle" height="15" src="images/0301/image014.gif" width="12"/>与时间<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>之间的对应关系.<br clear="none"/>
+　　在<i>
+<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>
+</i>时刻，质点所处的位置是<img align="absmiddle" height="24" src="images/0301/image016.gif" width="68"/>，在<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>时刻，质点所处的位置是<img align="absmiddle" height="27" src="images/0301/image017.gif" width="59"/>．
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="60" width="410">
+<param name="movie" value="flash/31001.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="60" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/31001.swf" type="application/x-shockwave-flash" width="410"/>
+</object>
+</center>
+　　当时间从<i>
+<img align="absmiddle" height="24" src="images/0301/image018.gif" width="15"/>
+</i>时刻增加到<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>时刻时，相应地质点就从<img align="absmiddle" height="24" src="images/0301/image016.gif" width="68"/>这个位置运动到了新的位置<img align="absmiddle" height="27" src="images/0301/image017.gif" width="59"/>．<br clear="none"/>
+　　从<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>到<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>这一段时间里，质点的平均速度
+<center>
+<img align="absmiddle" height="45" src="images/0301/image019.gif" width="192"/>．</center>
+　　<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>时刻的瞬时速度
+<center>
+<img align="absmiddle" height="33" src="images/0301/image020.gif" width="57"/>=<img align="absmiddle" height="47" src="images/0301/image021.gif" width="140"/>
+<img align="absmiddle" height="41" src="images/0301/image022.gif" width="36"/> (<img align="absmiddle" height="24" src="images/0301/image023.gif" width="67"/>很小)</center>
+　　时间间隔<img align="absmiddle" height="17" src="images/0301/image024.gif" width="20"/>取得越小，也就是<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>和<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>越接近，近似程度越好，于是让时间间隔<img align="absmiddle" height="19" src="images/0301/image025.gif" width="52"/>，即<img align="absmiddle" height="24" src="images/0301/image026.gif" width="44"/>，就得到了<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>时刻的瞬时速度<img align="absmiddle" height="24" src="images/0301/image027.gif" width="33"/>．所求的瞬时速度<img align="absmiddle" height="24" src="images/0301/image027.gif" width="33"/>为
+<center>
+<img align="absmiddle" height="24" src="images/0301/image028.gif" width="35"/>
+<img align="absmiddle" height="47" src="images/0301/image029.gif" width="196"/>
+<img align="absmiddle" height="41" src="images/0301/image030.gif" width="65"/>
+</center>
+　　这个极限式在形式上是一个特殊结构的极限<b>——</b>增量比的极限：函数的增量与自变量的增量之比，当自变量的增量趋于零时的极限．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>引例2　曲线的</b>
+<b>切线斜率问题</b>
+<br clear="none"/>
+　　设曲线方程为<img align="absmiddle" height="23" src="images/0301/image031.gif" width="59"/>，求曲线上任一点<img align="absmiddle" height="24" src="images/0301/image032.gif" width="89"/>处的切线的斜率．<br clear="none"/>
+　　研究的结果：设曲线<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image032.gif" width="89"/>处存在切线，切线的倾角为<img align="absmiddle" height="15" src="images/0301/image033.gif" width="16"/>，则切线的斜率为
+<center>
+<b>
+<img align="absmiddle" height="47" src="images/0301/image034.gif" width="189"/>
+<img align="absmiddle" height="41" src="images/0301/image035.gif" width="65"/>
+</b>
+<b>．</b>
+</center>
+　　这也是一个特殊结构的极限<b>——</b>增量比的极限：函数的增量与自变量的增量之比，当自变量的增量趋于零时的极限．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_1" id="part3_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、导数的定义</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>设函数<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>，当自变量在点<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>处有一个增量<img align="absmiddle" height="17" src="images/0301/image036.gif" width="23"/>，即自变量从<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>变化到<img align="absmiddle" height="24" src="images/0301/image037.gif" width="53"/>时，函数相应的增量为<img align="absmiddle" height="21" src="images/0301/image009.gif" width="167"/>，如果极限<img align="absmiddle" height="41" src="images/0301/image038.gif" width="52"/>存在，则称函数<img align="absmiddle" height="23" src="images/0301/image039.gif" width="61"/>在点<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>处可导，且这个极限值为函数<img align="absmiddle" height="21" src="images/0301/image040.gif" width="61"/>在<img align="absmiddle" height="24" src="images/0301/image041.gif" width="17"/>处的导数，记为<img align="absmiddle" height="21" src="images/0301/image042.gif" width="48"/>，即
+<center>
+<img align="absmiddle" height="41" src="images/0301/image043.gif" width="287"/>　　<strong>……(1)</strong>
+</center>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<b>几点说明</b>：<br clear="none"/>
+　　(1) 上述增量比的极限存在，我们才称函数<img align="absmiddle" height="23" src="images/0301/image039.gif" width="61"/>在点<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>处可导，如果这个极限不存在，则称函数<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image045.gif" width="17"/>处不可导．<br clear="none"/>
+　　特别地，如果<img align="absmiddle" height="41" src="images/0301/image046.gif" width="80"/>，则函数<img align="absmiddle" height="23" src="images/0301/image047.gif" width="68"/>在<img align="absmiddle" height="24" src="images/0301/image041.gif" width="17"/>处是不可导的，但为了描述方便，我们也称函数在<img align="absmiddle" height="24" src="images/0301/image041.gif" width="17"/>处的导数为无穷大，并记为<img align="absmiddle" height="24" src="images/0301/image048.gif" width="73"/>．<br clear="none"/>
+　　(2) <img align="absmiddle" height="23" src="images/0301/image039.gif" width="61"/>在点<i>
+<img align="absmiddle" height="21" src="images/0301/image002.gif" width="19"/>
+</i>处的导数<img align="absmiddle" height="21" src="images/0301/image042.gif" width="48"/>也可用下列记号来表示：
+<center>
+<img align="absmiddle" height="29" src="images/0301/image049.gif" width="45"/>，　<img align="absmiddle" height="48" src="images/0301/image050.gif" width="48"/>，　<img align="absmiddle" height="48" src="images/0301/image051.gif" width="68"/>．</center>
+　　(3) 导数定义的表示形式比较灵活．<br clear="none"/>
+　　在(1)式中，如果简记自变量的增量<img align="absmiddle" height="19" src="images/0301/image052.gif" width="48"/>，因为<img align="absmiddle" height="19" src="images/0301/image053.gif" width="115"/>，所以函数<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image045.gif" width="17"/>处的导数((1)式)可改写为：
+<center>
+<img align="absmiddle" height="43" src="images/0301/image054.gif" width="271"/>　<strong>……(2)</strong>
+</center>
+　　在(1)式中，若记<img align="absmiddle" height="24" src="images/0301/image055.gif" width="77"/>，并注意到<img align="absmiddle" height="24" src="images/0301/image056.gif" width="120"/>，则函数<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image045.gif" width="17"/>处的导数又可改写为：
+<center>
+<b>
+<img align="absmiddle" height="47" src="images/0301/image057.gif" width="244"/>  </b>
+<b>……</b>
+<b>(3)</b>
+</center>
+　　如果记<img align="absmiddle" height="19" src="images/0301/image058.gif" width="57"/>，<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image045.gif" width="17"/>处的导数又会写成什么形式呢？请同学们思考．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　(4) 如果函数<img align="absmiddle" height="21" src="images/0301/image059.gif" width="61"/>在开区间<img align="absmiddle" height="17" src="images/0301/image060.gif" width="13"/>内的每一点<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>处都可导，称函数<img align="absmiddle" height="21" src="images/0301/image061.gif" width="56"/>)在区间<img align="absmiddle" height="17" src="images/0301/image060.gif" width="13"/>上可导．这时，对任意<img align="absmiddle" height="19" src="images/0301/image062.gif" width="36"/>，都对应着<img align="absmiddle" height="21" src="images/0301/image063.gif" width="36"/>的一个确定的导数值，这样就构成了一个新的函数，称为<img align="absmiddle" height="21" src="images/0301/image063.gif" width="36"/>的导函数，也简称导数，记为<img align="absmiddle" height="23" src="images/0301/image064.gif" width="39"/>．<br clear="none"/>
+　　求<img align="absmiddle" height="21" src="images/0301/image059.gif" width="61"/>在区间<img align="absmiddle" height="17" src="images/0301/image060.gif" width="13"/>内的导函数，就是求<img align="absmiddle" height="21" src="images/0301/image063.gif" width="36"/>在<img align="absmiddle" height="17" src="images/0301/image060.gif" width="13"/>内任意一点<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>处的导数，所以只需在(1)式中，将<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>换成<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>，就得到<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>的导函数
+<center>
+<img align="absmiddle" height="41" src="images/0301/image066.gif" width="259"/>，</center>
+　　或
+<center>
+<img align="absmiddle" height="41" src="images/0301/image067.gif" width="244"/>．</center>
+　　<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的导数值<img align="absmiddle" height="24" src="images/0301/image068.gif" width="48"/>等于导函数<img align="absmiddle" height="21" src="images/0301/image069.gif" width="37"/>在<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的函数值，即
+<center>
+<img align="absmiddle" height="32" src="images/0301/image070.gif" width="124"/>．</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_3" id="part3_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>由导数的定义，求导数的方法可概括为以下三个步骤：</b>
+<br clear="none"/>
+　　(1)　<strong>求增量</strong>　求出当自变量从<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>变化到<img align="absmiddle" height="19" src="images/0301/image071.gif" width="45"/>时，函数相应的改变量
+<center>
+<img align="absmiddle" height="21" src="images/0301/image072.gif" width="145"/>，</center>
+　　(2)　<strong>算比值</strong>　求出函数的平均变化率
+<center>
+<img align="absmiddle" height="41" src="images/0301/image073.gif" width="153"/>，</center>
+　　(3)　<strong>取极限</strong>　求自变量的增量<img align="absmiddle" height="19" src="images/0301/image074.gif" width="53"/>时函数的瞬时变化率，即导数
+<center>
+<b>
+<img align="absmiddle" height="41" src="images/0301/image075.gif" width="169"/>
+</b>
+<b>．</b>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_4" id="part3_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.1</b>　求常函数<img align="absmiddle" height="21" src="images/0301/image076.gif" width="43"/>的导数．<br clear="none"/>
+　　<b>解</b>　当自变量从<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>变化到<img align="absmiddle" height="19" src="images/0301/image071.gif" width="45"/>时，函数相应的改变量
+<center>
+<img align="absmiddle" height="21" src="images/0301/image077.gif" width="228"/>，<br clear="none"/>
+<img align="absmiddle" height="41" src="images/0301/image078.gif" width="87"/>，</center>
+　　从而，
+<center>
+<img align="absmiddle" height="41" src="images/0301/image079.gif" width="107"/>
+</center>
+　　即
+<center>
+<img align="absmiddle" height="29" src="images/0301/image080.gif" width="56"/>．</center>
+　　由此可知，<b>常数的导数等于零</b>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_5" id="part3_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.2</b>　求函数<img align="absmiddle" height="24" src="images/0301/image081.gif" width="65"/>的导数．<br clear="none"/>
+　　<b>解</b>　当自变量从<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>变化到<img align="absmiddle" height="19" src="images/0301/image071.gif" width="45"/>时，函数相应的改变量<br clear="none"/>
+　　　　<img align="absmiddle" height="25" src="images/0301/image082.gif" width="253"/>
+<br clear="none"/>
+　　　　　 <img align="absmiddle" height="25" src="images/0301/image083.gif" width="193"/>，<br clear="none"/>
+　　　<img align="absmiddle" height="41" src="images/0301/image084.gif" width="107"/>
+<img align="absmiddle" height="41" src="images/0301/image085.gif" width="263"/>，<br clear="none"/>
+　　即
+<center>
+<b>
+<img align="absmiddle" height="31" src="images/0301/image086.gif" width="69"/>
+</b>
+<b>．</b>
+</center>
+　　可以证明，<b>幂函数的导数公式：</b>
+<b>
+<img align="absmiddle" height="24" src="images/0301/image087.gif" width="92"/>
+</b>．当<img align="absmiddle" height="19" src="images/0301/image088.gif" width="41"/>时，就是<b>
+<img align="absmiddle" height="31" src="images/0301/image086.gif" width="69"/>
+</b>
+<b>．</b>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_6" id="part3_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.3</b>　求函数<img align="absmiddle" height="21" src="images/0301/image089.gif" width="55"/>的导数．　　<a act="click_open" elm="pa030101.html" href="####" shape="rect" wh="400,230">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<b>解</b>　当自变量从<img align="absmiddle" height="15" src="images/0301/image003.gif" width="13"/>变化到<img align="absmiddle" height="19" src="images/0301/image071.gif" width="45"/>时，函数相应的改变量为
+<center>
+<img align="absmiddle" height="45" src="images/0301/image090.gif" width="424"/>，<br clear="none"/>
+<img align="absmiddle" height="62" src="images/0301/image091.gif" width="437"/>，</center>
+　　而
+<center>
+<img align="absmiddle" height="46" src="images/0301/image092.gif" width="121"/>，</center>
+　　所以
+<center>
+<img align="absmiddle" height="45" src="images/0301/image093.gif" width="297"/>，</center>
+　　即
+<center>
+<img align="absmiddle" height="41" src="images/0301/image094.gif" width="71"/>．</center>
+　　可以证明：对数函数的导数公式：<img align="absmiddle" height="41" src="images/0301/image095.gif" width="112"/>，其中<img align="absmiddle" height="19" src="images/0301/image096.gif" width="39"/>，且<img align="absmiddle" height="19" src="images/0301/image097.gif" width="36"/>．特别地，当<img align="absmiddle" height="15" src="images/0301/image098.gif" width="37"/>时，就是<img align="absmiddle" height="41" src="images/0301/image094.gif" width="71"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_7" id="part3_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.4</b>　设<img align="absmiddle" height="70" src="images/0301/image099.gif" width="159"/>，求<img align="absmiddle" height="21" src="images/0301/image100.gif" width="40"/>．　　<a act="click_open" elm="pa030101.html" href="####" shape="rect" wh="400,230">提示&gt;&gt;</a>
+<br clear="none"/>
+<br clear="none"/>
+　　<b>解</b>　<img align="absmiddle" height="41" src="images/0301/image101.gif" width="181"/>
+<br clear="none"/>
+　　　　　　　<img align="absmiddle" height="41" src="images/0301/image102.gif" width="120"/>
+<br clear="none"/>
+　　　　　　　<img align="absmiddle" height="61" src="images/0301/image103.gif" width="105"/>
+<br clear="none"/>
+　　　　　　　<img align="absmiddle" height="41" src="images/0301/image104.gif" width="112"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_8" id="part3_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.5</b>　已知<img align="absmiddle" height="24" src="images/0301/image105.gif" width="69"/>，求<br clear="none"/>
+　　(1)　<img align="absmiddle" height="43" src="images/0301/image106.gif" width="165"/>；<br clear="none"/>
+　　(2)　<img align="absmiddle" height="43" src="images/0301/image107.gif" width="153"/>．<br clear="none"/>
+　　<b>解</b>
+<br clear="none"/>
+　　(1)　<img align="absmiddle" height="43" src="images/0301/image106.gif" width="165"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="43" src="images/0301/image108.gif" width="188"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="24" src="images/0301/image109.gif" width="96"/>．<br clear="none"/>
+　　(2)　<img align="absmiddle" height="43" src="images/0301/image107.gif" width="153"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="43" src="images/0301/image110.gif" width="177"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="43" src="images/0301/image111.gif" width="207"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="24" src="images/0301/image112.gif" width="92"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_9" id="part3_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>课堂练习</b>
+<br clear="none"/>
+　　1、设<img align="absmiddle" height="25" src="images/0301/image113.gif" width="72"/>，求<img align="absmiddle" height="23" src="images/0301/image114.gif" width="35"/>．<br clear="none"/>
+　　2、利用幂函数的求导公式：<b>
+<img align="absmiddle" height="24" src="images/0301/image087.gif" width="92"/>
+</b>，写出下列函数的导数：
+<center>
+<img align="absmiddle" height="24" src="images/0301/image115.gif" width="45"/>，　<img align="absmiddle" height="41" src="images/0301/image116.gif" width="43"/>，　<img align="absmiddle" height="28" src="images/0301/image117.gif" width="60"/>．</center>
+　　3、利用对数函数的求导公式：<img align="absmiddle" height="41" src="images/0301/image095.gif" width="112"/>，写出函数<img align="absmiddle" height="24" src="images/0301/image118.gif" width="69"/>的导数．<br clear="none"/>
+　　4、如果函数<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>可导，则<img align="absmiddle" height="43" src="images/0301/image119.gif" width="168"/>（　　　）．（<img align="absmiddle" height="20" src="images/zhu.gif" width="20"/>：此题为2006年1月试卷中的题）<br clear="none"/>
+　　　A.<img align="absmiddle" height="24" src="images/0301/image120.gif" width="47"/>                       B.<img align="absmiddle" height="41" src="images/0301/image121.gif" width="60"/>
+<br clear="none"/>
+　　　C.<img align="absmiddle" height="24" src="images/0301/image122.gif" width="55"/>                      D.不存在<br clear="none"/>
+
+　　5、设函数<b>
+<img align="absmiddle" height="21" src="images/0301/image063.gif" width="36"/>
+</b>在<img align="absmiddle" height="15" src="images/0301/image123.gif" width="37"/>点可导，且<img align="absmiddle" height="44" src="images/0301/image124.gif" width="164"/>，求<img align="absmiddle" height="21" src="images/0301/image125.gif" width="40"/>．<br clear="none"/>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" id="00" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<table border="0" cellpadding="0" cellspacing="0" class="tab" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>答案：</strong>
+<br clear="none"/>
+　　1、此题为教材中的例6．<br clear="none"/>
+　　方法1　利用导数的定义．可对照教材，注意其中求“<img align="absmiddle" height="41" src="images/0301/image126.gif" width="16"/>”型未定式时所用的技巧．<br clear="none"/>
+　　方法2　利用幂函数的求导公式：<b>
+<img align="absmiddle" height="24" src="images/0301/image087.gif" width="92"/>
+</b>，先求<img align="absmiddle" height="25" src="images/0301/image113.gif" width="72"/>的导函数
+<center>
+<img align="absmiddle" height="60" src="images/0301/image127.gif" width="309"/>
+</center>
+　　再将<img align="absmiddle" height="19" src="images/0301/image128.gif" width="35"/>代入，得
+<center>
+<img align="absmiddle" height="55" src="images/0301/image129.gif" width="188"/>．</center>
+　　2、<img align="absmiddle" height="31" src="images/0301/image130.gif" width="123"/>；<br clear="none"/>
+　　　　<img align="absmiddle" height="52" src="images/0301/image131.gif" width="255"/>；<br clear="none"/>
+　　　　<img align="absmiddle" height="60" src="images/0301/image132.gif" width="268"/>．<br clear="none"/>
+　　3、<img align="absmiddle" height="41" src="images/0301/image133.gif" width="140"/>．<br clear="none"/>
+　　4、因为<img align="absmiddle" height="43" src="images/0301/image134.gif" width="393"/>，<br clear="none"/>
+　　　 所以选C．<br clear="none"/>
+　　5、<img align="absmiddle" height="41" src="images/0301/image135.gif" width="340"/>
+<br clear="none"/>
+　　　　　　 <img align="absmiddle" height="41" src="images/0301/image136.gif" width="264"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+　　<strong>注：</strong>在上述推导过程中，先写出<img align="absmiddle" height="21" src="images/0301/image125.gif" width="40"/>的导数定义式，再将自变量的增量<img align="absmiddle" height="19" src="images/0301/image137.gif" width="23"/>写成<img align="absmiddle" height="19" src="images/0301/image138.gif" width="33"/>的形式，即可利用已知的条件．注意<img align="absmiddle" height="19" src="images/0301/image074.gif" width="53"/>就是<img align="absmiddle" height="19" src="images/0301/image139.gif" width="64"/>，而<img align="absmiddle" height="19" src="images/0301/image139.gif" width="64"/>相当于<img align="absmiddle" height="19" src="images/0301/image140.gif" width="44"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4_1" id="part4_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>三、左、右导数的概念</h2>
+<br clear="none"/>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="50" width="460">
+<param name="movie" value="flash/PPT2.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="50" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/PPT2.swf" type="application/x-shockwave-flash" width="460"/>
+</object>
+</center>
+<br clear="none"/>
+　　极限<img align="absmiddle" height="41" src="images/0301/image038.gif" width="52"/>中，<img align="absmiddle" height="19" src="images/0301/image141.gif" width="53"/>可进一步细分为<img align="absmiddle" height="21" src="images/0301/image142.gif" width="60"/>和<img align="absmiddle" height="21" src="images/0301/image143.gif" width="60"/>，相应的极限
+<center>
+<img align="absmiddle" height="43" src="images/0301/image144.gif" width="387"/>
+</center>
+　　和
+<center>
+<img align="absmiddle" height="43" src="images/0301/image145.gif" width="387"/>
+</center>
+　　分别称为<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的左导数和右导数，记为：<img align="absmiddle" height="27" src="images/0301/image146.gif" width="53"/>和<img align="absmiddle" height="27" src="images/0301/image147.gif" width="53"/>，即<br clear="none"/>
+　　<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的左导数为：
+<center>
+<img align="absmiddle" height="43" src="images/0301/image148.gif" width="448"/>，</center>
+　　<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的右导数为：
+<center>
+<img align="absmiddle" height="43" src="images/0301/image149.gif" width="448"/>．</center>
+　　利用函数极限与其左、右极限的关系可知：
+<center>
+<img align="absmiddle" height="41" src="images/0301/image150.gif" width="249"/>．</center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定理：</b>
+<img align="absmiddle" height="23" src="images/0301/image151.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image152.gif" width="19"/>处可导的充分必要条件是<img align="absmiddle" height="23" src="images/0301/image151.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image152.gif" width="19"/>处的左、右导数均存在且相等．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4_2" id="part4_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.6</b>　设<img align="absmiddle" height="48" src="images/0301/image153.gif" width="133"/>讨论<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处的可导性．<br clear="none"/>
+　　<b>分析</b>　<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>是分段函数，<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>是分段点，因为<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>的左、右两侧表达式不同，所以需要利用函数在某点可导的充分必要条件来讨论．<br clear="none"/>
+　<b>　解</b>　考察<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处的左、右导数
+<center>
+<img align="absmiddle" height="41" src="images/0301/image155.gif" width="381"/>，<br clear="none"/>
+<img align="absmiddle" height="41" src="images/0301/image156.gif" width="401"/>，</center>
+　　因为<img align="absmiddle" height="29" src="images/0301/image157.gif" width="120"/>，所以<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>的导数存在，且<img align="absmiddle" height="23" src="images/0301/image158.gif" width="60"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4_3" id="part4_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.7</b>　考察函数<img align="absmiddle" height="27" src="images/0301/image159.gif" width="43"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处的可导性．<br clear="none"/>
+　　<b>分析</b> <img align="absmiddle" height="75" src="images/0301/image160.gif" width="176"/>，这是一个分段函数，<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>是分段点，因为函数在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>的两侧表达式不同，所以需要利用函数在某点可导的充分必要条件来讨论．
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="160" width="260">
+<param name="movie" value="flash/31002.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="160" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/31002.swf" type="application/x-shockwave-flash" width="260"/>
+</object>
+</center>
+　　<b>解　</b>
+<img align="absmiddle" height="75" src="images/0301/image161.gif" width="155"/>考察<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处的左、右导数．
+<center>
+<img align="absmiddle" height="41" src="images/0301/image163.gif" width="408"/>，<br clear="none"/>
+<img align="absmiddle" height="41" src="images/0301/image164.gif" width="385"/>，</center>
+　　∵<img align="absmiddle" height="23" src="images/0301/image165.gif" width="93"/>，∴<img align="absmiddle" height="27" src="images/0301/image159.gif" width="43"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处不可导．<br clear="none"/>
+　　可以证明：函数<img align="absmiddle" height="27" src="images/0301/image166.gif" width="68"/>在<img align="absmiddle" height="15" src="images/0301/image167.gif" width="39"/>处不可导．当<img align="absmiddle" height="19" src="images/0301/image168.gif" width="39"/>时，即为本例．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4_4" id="part4_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>注意</b>：对于分段函数，讨论其分段点处的导数是否存在时，如果分段点两侧函数的表达式不同，则需要利用可导的充分必要条件判断，即考察该点的左、右导数是否存在且相等．<br clear="none"/>
+
+　　若函数曲线存在角点或尖点，那么在角点或尖点处，导数是不存在的．例如<img align="absmiddle" height="27" src="images/0301/image169.gif" width="44"/>和<img align="absmiddle" height="27" src="images/0301/image170.gif" width="65"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处出现角点（或尖点），所以在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处不可导，<img align="absmiddle" height="27" src="images/0301/image166.gif" width="68"/>在<img align="absmiddle" height="15" src="images/0301/image167.gif" width="39"/>处出现角点，所以在<img align="absmiddle" height="15" src="images/0301/image167.gif" width="39"/>处不可导．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part5" id="part5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>四、函数的可导性与连续性的关系</h2>
+<br clear="none"/>
+　　<b>命题　</b>若<img align="absmiddle" height="23" src="images/0301/image151.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image152.gif" width="19"/>处可导，则<img align="absmiddle" height="23" src="images/0301/image151.gif" width="35"/>在点<img align="absmiddle" height="24" src="images/0301/image152.gif" width="19"/>处必然连续；反之，不一定成立．<br clear="none"/>
+　　<strong>此命题表明：</strong>
+<br clear="none"/>
+　　(1)　函数在某点可导，则必在该点连续，即连续是可导的必要条件．<br clear="none"/>
+　　(2)　若函数在某点不连续，则在该点一定不可导．<br clear="none"/>
+　　(3)　函数在某点连续，不一定在该点可导，即连续不是可导的充分条件．<br clear="none"/>
+　　例如，<img align="absmiddle" height="27" src="images/0301/image159.gif" width="43"/>在<img align="absmiddle" height="19" src="images/0301/image154.gif" width="37"/>处是连续的，但在该点不可导．<br clear="none"/>
+　　<b>总之，连续是可导的必要条件，但不是充分条件．</b>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part6_1" id="part6_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>五、导数的初步应用</h2>
+<br clear="none"/>
+　　回顾导数定义的引出：两个具体实例<b>→</b>相同结构的极限式<b>→</b>导数的定义．因此，我们有这样的结论：<br clear="none"/>
+　　<strong>1、</strong>导数的力学意义：变速直线运动物体在时刻<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>的瞬时速度<img align="absmiddle" height="24" src="images/0301/image027.gif" width="33"/>是位置函数<img align="absmiddle" height="23" src="images/0301/image171.gif" width="27"/>在<img align="absmiddle" height="24" src="images/0301/image172.gif" width="15"/>处的导数，即
+<center>
+<img align="absmiddle" height="57" src="images/0301/image173.gif" width="157"/>．</center>
+　　更一般地，若某物理量<img align="absmiddle" height="17" src="images/0301/image174.gif" width="15"/>是时间<img align="absmiddle" height="16" src="images/0301/image011.gif" width="9"/>的函数<img align="absmiddle" height="23" src="images/0301/image175.gif" width="56"/>，则<img align="absmiddle" height="24" src="images/0301/image176.gif" width="40"/>的物理意义是<img align="absmiddle" height="24" src="images/0301/image012.gif" width="15"/>时刻<img align="absmiddle" height="17" src="images/0301/image174.gif" width="15"/>的瞬时速度（瞬时变化率）．<br clear="none"/>
+　　
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part6_2" id="part6_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_03_01" class="part6_2">
+<br clear="none"/>
+    <strong>2、</strong>导数的几何意义：曲线<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>在点<img align="absmiddle" height="24" src="images/0301/image177.gif" width="52"/>处的切线的斜率是函数<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的导数．<br clear="none"/>
+　　导数的几何意义可用于研究与曲线在某点的切线斜率相关的问题．例如，根据导数的几何意义，曲线<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>上点<img align="absmiddle" height="24" src="images/0301/image178.gif" width="75"/>处的切线的斜率<img align="absmiddle" height="25" src="images/0301/image179.gif" width="84"/>，法线的斜率为<img align="absmiddle" height="47" src="images/0301/image180.gif" width="148"/>（<img align="absmiddle" height="24" src="images/0301/image181.gif" width="71"/>），于是可由直线的点斜式，求得曲线<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>上点<img align="absmiddle" height="24" src="images/0301/image178.gif" width="75"/>处的切线方程为：
+<center>
+<img align="absmiddle" height="25" src="images/0301/image182.gif" width="153"/>．</center>
+　　法线方程为：
+<center>
+<img align="absmiddle" height="45" src="images/0301/image183.gif" width="164"/>．</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part6_3" id="part6_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<b>例</b>
+<b>3.1.8</b>　求曲线<img align="absmiddle" height="41" src="images/0301/image184.gif" width="43"/>在点<img align="absmiddle" height="45" src="images/0301/image185.gif" width="44"/>处的切线方程和法线方程．<br clear="none"/>
+　　<b>解</b>　<img align="absmiddle" height="49" src="images/0301/image186.gif" width="112"/>，<img align="absmiddle" height="37" src="images/0301/image187.gif" width="111"/>，<img align="absmiddle" height="47" src="images/0301/image188.gif" width="100"/>，<br clear="none"/>
+　　于是所求切线方程为
+<center>
+<img align="absmiddle" height="45" src="images/0301/image189.gif" width="120"/>，即<img align="absmiddle" height="21" src="images/0301/image190.gif" width="93"/>，</center>
+　　所求法线方程为
+<center>
+<img align="absmiddle" height="45" src="images/0301/image191.gif" width="116"/>，即<img align="absmiddle" height="21" src="images/0301/image192.gif" width="107"/>．</center>
+　　由于导数是函数变化量与自变量变化量之比的极限，所以反映了函数相对于自变量的变化而变化的快慢程度，即变化率．实际应用中很多类似的问题，如物理中的电流、加速度、线速度等都会归结到导数的运算．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part6_4" id="part6_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">　　1、函数<img align="absmiddle" height="23" src="images/0301/image001.gif" width="60"/>在点<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的导数可记为
+<center>
+<img align="absmiddle" height="24" src="images/0301/image193.gif" width="45"/>，　<img align="absmiddle" height="29" src="images/0301/image049.gif" width="45"/>，　<img align="absmiddle" height="48" src="images/0301/image050.gif" width="48"/>，　<img align="absmiddle" height="48" src="images/0301/image051.gif" width="68"/>，</center>
+<br clear="none"/>
+　　2、导数定义的几个常见等价形式为
+<center>
+<b>
+<img align="absmiddle" height="41" src="images/0301/image043.gif" width="287"/>
+</b>
+<b>　　</b>……(1)</center>
+或
+<center>
+<b>
+<img align="absmiddle" height="43" src="images/0301/image054.gif" width="271"/>
+</b>
+<b>　　　</b>……(2)</center>
+或
+<center>
+<b>
+<img align="absmiddle" height="47" src="images/0301/image057.gif" width="244"/> </b> <b>　　　　</b>……(3)</center>
+<br clear="none"/>
+　　3、函数<img align="absmiddle" height="23" src="images/0301/image006.gif" width="35"/>的导函数（简称导数）为
+<center>
+<img align="absmiddle" height="41" src="images/0301/image194.gif" width="223"/>，</center>
+或
+<center>
+<img align="absmiddle" height="41" src="images/0301/image195.gif" width="211"/>
+</center>
+　　<img align="absmiddle" height="21" src="images/0301/image044.gif" width="35"/>在<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的导数<img align="absmiddle" height="24" src="images/0301/image196.gif" width="47"/>等于导函数<img align="absmiddle" height="21" src="images/0301/image069.gif" width="37"/>在<img align="absmiddle" height="24" src="images/0301/image065.gif" width="19"/>处的函数值，即<img align="absmiddle" height="29" src="images/0301/image197.gif" width="119"/>．<br clear="none"/>
+<br clear="none"/>
+　　4、研究分段函数在分段点处的导数时，如果分段点两侧函数的表达式不同，则需要利用函数在某点可导的充分必要条件．<br clear="none"/>
+<br clear="none"/>
+　　5、导数在物理和几何中的简单运用．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_03_01" class="popup-questions" knowid="know_j_03_01" syncpart="part6_2">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="c" score="100">
+<p>8．（单选题）曲线<em>y</em>=cos <em>x</em>上点<img src="images/0301/ch0301_clip_image001.gif" width="41" height="37" align="absmiddle">处的法线的斜率等于（    ）</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0301/ch0301_clip_image002.gif" alt="" width="24" height="24" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0301/ch0301_clip_image003.gif" width="27" height="45" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0301/ch0301_clip_image004.gif" alt="" width="36" height="41" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0301/ch0301_clip_image005.gif" width="16" height="41" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】C</p>
+<p>【解析】<img src="images/0301/ch0301_clip_image006.gif" alt="" width="289" height="57" align="texttop"></p>
+<p>【知识点】<strong>导数的几何意义</strong></p>
+</div>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>
+

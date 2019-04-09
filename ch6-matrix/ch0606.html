@@ -1,0 +1,495 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>6.6 逆矩阵</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>6.6 逆矩阵</h1></center>
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、方阵可逆及逆阵的定义</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<b>定义：</b>对于n阶方阵A，若存在同阶方阵B，使得
+<center>AB=BA=E，</center>
+则称方阵A是可逆的，并称B为A的逆矩阵．A的逆矩阵记作<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>注意：</strong>
+<br clear="none"/>
+　　(1)可逆阵一定是方阵，但不是所有方阵均可逆．<br clear="none"/>
+　　(2)当<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆时，其逆矩阵<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>也可逆，它们互为逆矩阵．<br clear="none"/>
+　　(3)若<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，则其逆阵是唯一的．<br clear="none"/>
+　　<strong>证</strong>　设<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>、<img align="absmiddle" height="19" src="images/0606/image004.gif" width="16"/>都是<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>的逆矩阵，即
+<center>
+<img align="absmiddle" height="43" src="images/0606/image005.gif" width="93"/>
+</center>
+故
+<center>
+<img align="absmiddle" height="23" src="images/0606/image006.gif" width="233"/>.</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、方阵可逆的充分必要条件</h2>
+<br clear="none"/>
+　　<b>充要条件</b>
+<b>1</b>
+<br clear="none"/>
+　　若AB＝E(或BA＝E)，则<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>与<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>均可逆，且互为逆阵，即<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>＝<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>，同时<img align="absmiddle" height="20" src="images/0606/image007.gif" width="25"/>=<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>．<br clear="none"/>
+　　<b>充要条件</b>
+<b>2</b>
+<br clear="none"/>
+　　方阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆的充分必要条件是其行列式不为零，即
+<center>方阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆&lt;=&gt;<img align="absmiddle" height="27" src="images/0606/image008.gif" width="44"/>．</center>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>通常我们将行列式不为零的方阵称为非奇异矩阵，行列式为零的方阵称为奇异矩阵，所以也可以说
+<center>方阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆&lt;=&gt;<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>为非奇异矩阵．</center>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　特别地，若矩阵A是一阶方阵，即只有一个元素<img align="absmiddle" height="15" src="images/0606/image009.gif" width="13"/>时，则方阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆&lt;=&gt;<img align="absmiddle" height="19" src="images/0606/image010.gif" width="37"/>．<br clear="none"/>
+<br clear="none"/>
+<b>　　两个充要条件的应用</b>
+<br clear="none"/>
+　　(1)判断一个方阵是否可逆．<br clear="none"/>
+　　(2)证明某矩阵是另一个矩阵的逆阵．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.6.1</strong>　证明下列命题成立<br clear="none"/>
+　　(1)若<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，数<img align="absmiddle" height="19" src="images/0606/image011.gif" width="39"/>，则<img align="absmiddle" height="19" src="images/0606/image012.gif" width="23"/>也可逆，且<img align="absmiddle" height="41" src="images/0606/image013.gif" width="93"/>．<br clear="none"/>
+　　(2)若<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>与<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>为同阶矩阵且均可逆，则<img align="absmiddle" height="17" src="images/0606/image014.gif" width="27"/>也可逆，且<img align="absmiddle" height="25" src="images/0606/image015.gif" width="105"/>．　<a act="click_open" elm="pa060601.html" href="####" shape="rect" wh="400,210">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>证明：</strong>
+<br clear="none"/>
+　　(1)∵<img align="absmiddle" height="41" src="images/0606/image016.gif" width="229"/>，<br clear="none"/>
+　　　　∴<img align="absmiddle" height="19" src="images/0606/image012.gif" width="23"/>可逆，且<img align="absmiddle" height="41" src="images/0606/image013.gif" width="93"/>．<br clear="none"/>
+　　(2)∵<img align="absmiddle" height="24" src="images/0606/image017.gif" width="89"/>
+<img align="absmiddle" height="24" src="images/0606/image018.gif" width="236"/>，<br clear="none"/>
+　　　　∴　<img align="absmiddle" height="17" src="images/0606/image014.gif" width="27"/>可逆，且<img align="absmiddle" height="25" src="images/0606/image015.gif" width="105"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.6.2</strong>　设<img align="absmiddle" height="21" src="images/0606/image019.gif" width="32"/>均为<img align="absmiddle" height="19" src="images/0606/image020.gif" width="12"/>阶矩阵，<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆并且<img align="absmiddle" height="21" src="images/0606/image021.gif" width="116"/>．试证<img align="absmiddle" height="15" src="images/0606/image022.gif" width="7"/>
+<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>和<img align="absmiddle" height="17" src="images/0606/image023.gif" width="41"/>都是可逆矩阵.<a act="click_open" elm="pa060602.html" href="####" shape="rect" wh="400,325">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>证明</strong>　由已知条件可知，<img align="absmiddle" height="20" src="images/0606/image024.gif" width="100"/>
+<br clear="none"/>
+　　进一步有
+<center>
+<img align="absmiddle" height="25" src="images/0606/image025.gif" width="105"/>
+</center>
+　　两边取行列式有
+<center>
+<img align="absmiddle" height="32" src="images/0606/image026.gif" width="116"/>
+</center>
+　　即
+<center>
+<img align="absmiddle" height="33" src="images/0606/image032.gif" width="233"/>
+</center>
+　　因为<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，所以<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是非奇异方阵，即<img align="absmiddle" height="27" src="images/0606/image008.gif" width="44"/>，从而
+<center>
+<img align="absmiddle" height="31" src="images/0606/image033.gif" width="136"/>，</center>
+　　于是
+<center>
+<img align="absmiddle" height="27" src="images/0606/image034.gif" width="69"/>且<img align="absmiddle" height="27" src="images/0606/image035.gif" width="44"/>，</center>
+　　故<img align="absmiddle" height="17" src="images/0606/image023.gif" width="41"/>和<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>都是可逆矩阵．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.6.3</strong>　设<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是非奇异矩阵，且<img align="absmiddle" height="19" src="images/0606/image036.gif" width="64"/>，证明<img align="absmiddle" height="19" src="images/0606/image037.gif" width="43"/>．　<a act="click_open" elm="pa060601.html" href="####" shape="rect" wh="400,210">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>证</strong>　因为<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是非奇异矩阵，即<img align="absmiddle" height="27" src="images/0606/image038.gif" width="44"/>，所以<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，即<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>存在．<br clear="none"/>
+　　在等式<img align="absmiddle" height="19" src="images/0606/image036.gif" width="64"/>的两端同时左乘<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>，得
+<center>
+<img align="absmiddle" height="24" src="images/0606/image039.gif" width="127"/>
+</center>
+　　于是
+<center>
+<img align="absmiddle" height="24" src="images/0606/image040.gif" width="125"/>
+</center>
+　　即
+<center>
+<img align="absmiddle" height="19" src="images/0606/image037.gif" width="43"/>．<br clear="none"/>
+<br clear="none"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_1" id="part3_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>三、如何求可逆方阵的逆阵</h2>
+<br clear="none"/>
+<b>　　1、</b>
+<b>伴随矩阵</b>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>设<img align="absmiddle" height="15" src="images/0606/image041.gif" width="13"/>阶矩阵<b>
+<img align="absmiddle" height="17" src="images/0606/image042.gif" width="29"/>
+<img align="absmiddle" height="99" src="images/0606/image043.gif" width="137"/>
+</b>
+<b>，</b>其行列式<img align="absmiddle" height="27" src="images/0606/image044.gif" width="20"/>中元素<img align="absmiddle" height="25" src="images/0606/image045.gif" width="19"/>的代数余子式<img align="absmiddle" height="25" src="images/0606/image046.gif" width="21"/>构成的矩阵
+<center>
+<img align="absmiddle" height="99" src="images/0606/image047.gif" width="177"/>
+</center>
+称为矩阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>的<strong>伴随矩阵</strong>．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>注意：</strong>
+<br clear="none"/>
+　　(1) 矩阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>中各行的元素的代数余子式成为伴随矩阵中同序号的列的元素．<br clear="none"/>
+　　(2) 伴随矩阵具有性质
+<center>
+<img align="absmiddle" height="101" src="images/0606/image048.gif" width="252"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_06_03" class="part3_2">
+<br clear="none"/>
+　　<b>2</b>
+<b>、</b>
+<b>利用伴随矩阵求方阵的逆阵</b>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定理：</strong>
+<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆的充要条件是<img align="absmiddle" height="27" src="images/0606/image038.gif" width="44"/>（即<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>为非奇异方阵），且
+<center>
+<img align="absmiddle" height="47" src="images/0606/image049.gif" width="85"/>．</center>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_3" id="part3_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.6.4</strong>　讨论矩阵<img align="absmiddle" height="75" src="images/0606/image050.gif" width="97"/>的可逆性．如果可逆，求出其逆矩阵．<br clear="none"/>
+　　<strong>解</strong>　因为
+<center>　　　　　<img align="absmiddle" height="75" src="images/0606/image051.gif" width="231"/>，</center>
+　　所以方阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆．<br clear="none"/>
+　　由于<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="48" src="images/0606/image052.gif" width="448"/>
+<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="48" src="images/0606/image053.gif" width="452"/>
+<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="48" src="images/0606/image054.gif" width="467"/>
+<br clear="none"/>
+　　所以<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="75" src="images/0606/image055.gif" width="221"/>
+<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="101" src="images/0606/image056.gif" width="272"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_4" id="part3_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.6.5</strong>　设二阶方阵<img align="absmiddle" height="48" src="images/0606/image057.gif" width="79"/>，试问当<img align="absmiddle" height="21" src="images/0606/image058.gif" width="55"/>满足什么条件时，矩阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆？当<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆时，求出其逆矩阵<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>．<br clear="none"/>
+　　<strong>解</strong>　因为
+<center>
+<img align="absmiddle" height="48" src="images/0606/image059.gif" width="141"/>，</center>
+　　所以当<img align="absmiddle" height="19" src="images/0606/image060.gif" width="77"/>时，矩阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆．<br clear="none"/>
+　　由于
+<center>　　　<img align="absmiddle" height="51" src="images/0606/image061.gif" width="285"/>
+</center>
+　　故当<img align="absmiddle" height="19" src="images/0606/image062.gif" width="76"/>时，<br clear="none"/>
+　　　　　　　　　　　　　　　<img align="absmiddle" height="51" src="images/0606/image063.gif" width="185"/>
+<br clear="none"/>
+　　　　　　　　　　　　　　　　　<img align="absmiddle" height="48" src="images/0606/image064.gif" width="137"/>
+<br clear="none"/>
+　　例如，设<img align="absmiddle" height="48" src="images/0606/image065.gif" width="76"/>，则<img align="absmiddle" height="64" src="images/0606/image066.gif" width="252"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4" id="part4">
+<table border="0" cellpadding="0" cellspacing="0"  width="100%">
+<tr>
+<td  colspan="1" rowspan="1">
+<h2>四、可逆方阵的性质</h2>
+<br clear="none"/>
+　　<img align="absmiddle" height="244" src="images/0606/image067.gif" width="519"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part5_1" id="part5_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>五、逆阵的应用</h2>
+<br clear="none"/>
+　　<b>1</b>
+<b>、利用逆阵求解矩阵方程</b>
+<br clear="none"/>
+　　<strong>(1)</strong> 设矩阵方程为<img align="absmiddle" height="17" src="images/0606/image068.gif" width="55"/>，<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是可逆方阵，即<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>存在，在方程两边同时左乘<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>，即得：<img align="absmiddle" height="24" src="images/0606/image070.gif" width="108"/>，从而得方程组的解：<img align="absmiddle" height="20" src="images/0606/image071.gif" width="67"/>，求出<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>代入即可．<br clear="none"/>
+　　<strong>(2)</strong> 设矩阵方程为<img align="absmiddle" height="17" src="images/0606/image072.gif" width="52"/>，<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是可逆方阵，即<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>存在，在方程两边同时右乘<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>，即得：<img align="absmiddle" height="24" src="images/0606/image073.gif" width="105"/>，从而得方程组的解：<img align="absmiddle" height="20" src="images/0606/image074.gif" width="64"/>，求出<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>代入即可．<br clear="none"/>
+　　<strong>(3)</strong> 设矩阵方程为<img align="absmiddle" height="21" src="images/0606/image075.gif" width="68"/>，<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>和<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>均为可逆方阵，即<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>和<img align="absmiddle" height="20" src="images/0606/image007.gif" width="25"/>均存在，在方程两边同时左乘<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>，右乘<img align="absmiddle" height="20" src="images/0606/image007.gif" width="25"/>，即得：<img align="absmiddle" height="29" src="images/0606/image076.gif" width="177"/>，从而得方程组的解：<img align="absmiddle" height="21" src="images/0606/image077.gif" width="85"/>，求出<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>和<img align="absmiddle" height="20" src="images/0606/image007.gif" width="25"/>代入即可．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part5_2" id="part5_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>2</b>
+<b>、利用逆阵求解线性方程组（当方程个数和未知量个数相等时）</b>
+<br clear="none"/>
+　　线性方程组可用矩阵方程<img align="absmiddle" height="17" src="images/0606/image068.gif" width="55"/>来表示，其中<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>是系数矩阵，<img align="absmiddle" height="17" src="images/0606/image078.gif" width="19"/>是未知量构成的列矩阵，<img align="absmiddle" height="17" src="images/0606/image003.gif" width="16"/>是常数项构成的列矩阵．<br clear="none"/>
+　　于是，当系数矩阵<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，即<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>存在时，在方程两边同时左乘<img align="absmiddle" height="20" src="images/0606/image069.gif" width="25"/>，即得：<img align="absmiddle" height="24" src="images/0606/image070.gif" width="108"/>，从而得到方程组的解：<img align="absmiddle" height="20" src="images/0606/image071.gif" width="67"/>．<br clear="none"/>
+　　<strong>注：</strong>利用逆阵求解线性方程组是有条件的，首先系数矩阵必须是方阵，即方程组所含方程的个数与未知量的个数必须相等；其次系数矩阵还必须是可逆的．这和运用克莱姆法则解线性方程组的条件是一致的．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part5_3" id="part5_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.6.6</strong>　解线性方程组
+<center>　　　　　　　　　　<img align="absmiddle" height="75" src="images/0606/image079.gif" width="116"/>
+</center>
+　　<strong>解</strong>　令<img align="absmiddle" height="75" src="images/0606/image080.gif" width="239"/>则方程组改写成矩阵方程<img align="absmiddle" height="17" src="images/0606/image081.gif" width="56"/>．如果<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，则方程组的解为：<img align="absmiddle" height="20" src="images/0606/image071.gif" width="67"/>．<br clear="none"/>
+　　因为
+<center>
+<img align="absmiddle" height="75" src="images/0606/image082.gif" width="167"/>
+</center>
+　　故<img align="absmiddle" height="17" src="images/0606/image002.gif" width="16"/>可逆，即<img align="absmiddle" height="20" src="images/0606/image001.gif" width="25"/>存在，
+<center>
+<img align="absmiddle" height="75" src="images/0606/image083.gif" width="196"/>
+</center>
+　　因此，
+<center>
+<img align="absmiddle" height="120" src="images/0606/image084.gif" width="260"/>．</center>
+　　即
+<center>
+<img align="absmiddle" height="120" src="images/0606/image085.gif" width="95"/>
+</center>
+　　也可进一步写出：<img align="absmiddle" height="41" src="images/0606/image086.gif" width="165"/>．</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part5_4" id="part5_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">通过本节的学习，需要理解和掌握的是：<br clear="none"/>
+(1) 方阵可逆的定义<br clear="none"/>
+(2) 判断方阵可逆的两个充要条件及其在解题中的应用<br clear="none"/>
+(3) 利用伴随矩阵求逆矩阵的公式<br clear="none"/>
+(4) 可逆方阵的性质<br clear="none"/>
+(5) 求方阵的逆阵在解矩阵方程和线性方程组中的应用．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_06_03" class="popup-questions" knowid="know_j_06_03" syncpart="part3_2">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="c" score="100">
+<p>25．（单选题）设<em>A</em>=<img src="images/0606/ch0606_clip_image001.gif" width="53" height="37" align="absmiddle">，则<em>A</em><sup>-1</sup>=（    ）</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0606/ch0606_clip_image002.gif" alt="" width="67" height="88" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0606/ch0606_clip_image003.gif" alt="" width="67" height="88" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0606/ch0606_clip_image004.gif" alt="" width="67" height="88" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0606/ch0606_clip_image05.gif" alt="" width="67" height="88" align="absmiddle"></li>
+	 </ul>
+<div class="answer">
+<p>【答案】C</p>
+<p>【解析】<em>A</em>-1=<img src="images/0606/ch0606_clip_image06.gif" alt="" width="176" height="92" align="absmiddle"></p>
+<p>【知识点】<strong>利用伴随矩阵求方阵的逆阵</strong></p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

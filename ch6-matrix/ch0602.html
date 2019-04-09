@@ -1,0 +1,422 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>6.2 行列式的性质和计算</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>6.2 行列式的性质和计算</h1></center>
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、行列式的性质</h2>
+<br clear="none"/>
+　　先引入一个新的概念——转置行列式．<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>将一个行列式<img align="absmiddle" height="17" src="images/0602/image001.gif" width="17"/>的行与相应的列互换后得到的新行列式称为<img align="absmiddle" height="17" src="images/0602/image001.gif" width="17"/>的转置行列式，记为<img align="absmiddle" height="21" src="images/0602/image002.gif" width="20"/>或<img align="absmiddle" height="21" src="images/0602/image003.gif" width="25"/>．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>例</strong> 设三阶行列式<img align="absmiddle" height="91" src="images/0602/image004.gif" width="103"/>，将其同序号的行列互换，得<img align="absmiddle" height="17" src="images/0602/image001.gif" width="17"/>的转置行列式为<img align="absmiddle" height="91" src="images/0602/image005.gif" width="104"/>．<br clear="none"/>
+　　又如，设二阶行列式<img align="absmiddle" height="48" src="images/0602/image006.gif" width="75"/>，则其转置行列式<img align="absmiddle" height="48" src="images/0602/image007.gif" width="77"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>性质1</b> 行列式与它的转置行列式相等，即<img align="absmiddle" height="21" src="images/0602/image008.gif" width="49"/>.<br clear="none"/>
+<b>　　</b>由此性质可知，行列式中的行与列具有相等的地位，凡对行成立的结论对列也同样成立，反之亦然．<br clear="none"/>
+　　<b>性质2</b> 行列式中某一行(列)中每个元素都乘以常数<img align="absmiddle" height="19" src="images/0602/image009.gif" width="13"/>，等于用数<img align="absmiddle" height="19" src="images/0602/image009.gif" width="13"/>乘该行列式．<br clear="none"/>
+　　例如
+<center>
+<img align="absmiddle" height="88" src="images/0602/image010.gif" width="230"/>
+</center>
+　　即行列式中某一行(列)的所有元素的公因子可以提到行列式符号外．<br clear="none"/>
+　　第i行（或第i列）乘以数k，记为r<span class="style8">i</span>×k（或Ci×k）；将第i行（或第i列）的公因式k提到行列式符号外，记为r<span class="style8">i</span>÷k（或Ci÷k）．<br clear="none"/>
+<b>　　推论1</b>　如果行列式中某一行（列）的元素全是零，则行列式等于零．<br clear="none"/>
+<b>　　性质3</b> 若行列式的某一行（列）的元素都是两数之和，则此行列式可按该行（列）拆成两个行列式之和．<br clear="none"/>
+　　例如，
+<center>
+<img align="absmiddle" height="88" src="images/0602/image011.gif" width="330"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>性质4</b> 互换行列式的两行(列)，行列式变号．<br clear="none"/>
+　　交换第i行和j行，记为<img align="absmiddle" src="images/0602/image150.gif"/>；交换第i列和j列，记为<img align="absmiddle" src="images/0602/image152.gif"/>．<br clear="none"/>
+　　例如，计算二阶行列式
+<center>
+<img align="absmiddle" height="56" src="images/0602/image012.gif" width="69"/>，交换两行得：<img align="absmiddle" height="56" src="images/0602/image013.gif" width="60"/>，</center>
+　　可见，<img align="absmiddle" height="56" src="images/0602/image014.gif" width="83"/>
+<img align="absmiddle" height="56" src="images/0602/image015.gif" width="36"/>．<br clear="none"/>
+<b>　　性质5</b> 如果行列式中有两行（列）完全相同，则行列式等于零．<br clear="none"/>
+<b>　　推论</b>　行列式中如果有两行(或列)元素成比例，则此行列式等于零．<br clear="none"/>
+　　例如
+<center>
+<img align="absmiddle" height="72" src="images/0602/image016.gif" width="204"/>
+</center>
+<b>　　性质6</b> 把行列式的某一行(或列)的各元素乘以同一数，然后加到另一行(列)对应的元素上去，行列式不变．<br clear="none"/>
+　　第i行（第i列）乘以数k加到第j行（第j列）上，记为r<span class="style8">j</span>+
+kr<span class="style8">i</span>（c<span class="style8">j</span>+
+kc<span class="style8">i</span>）.<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_06_01" class="part2_1">
+<h2>二、行列式按行（列）展开法则</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>在<img align="absmiddle" height="15" src="images/0602/image017.gif" width="13"/>阶行列式中，将元素<img align="absmiddle" height="25" src="images/0602/image018.gif" width="19"/>所在的行和列上的所有元素都划去，留下的元素构成<img align="absmiddle" height="19" src="images/0602/image019.gif" width="33"/>阶行列式，称为元素<img align="absmiddle" height="25" src="images/0602/image018.gif" width="19"/>的余子式，记为<img align="absmiddle" height="25" src="images/0602/image020.gif" width="27"/>，称<img align="absmiddle" height="29" src="images/0602/image021.gif" width="104"/>为<img align="absmiddle" height="25" src="images/0602/image018.gif" width="19"/>的代数余子式．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>注意</strong>：<br clear="none"/>
+　　1、<img align="absmiddle" height="25" src="images/0602/image018.gif" width="19"/>的余子式和代数余子式中并不包含<img align="absmiddle" height="25" src="images/0602/image018.gif" width="19"/>．<br clear="none"/>
+　　2、余子式和代数余子式的阶数比原行列式低．<br clear="none"/>
+　　3、代数余子式是两部分的乘积，一部分是余子式，一部分是符号．<br clear="none"/>
+　　例如： 设三阶行列式<img align="absmiddle" height="75" src="images/0602/image022.gif" width="127"/>，划去<img align="absmiddle" height="24" src="images/0602/image023.gif" width="23"/>所在的第一行和第三列，留下的元素位置不动，就得到元素<img align="absmiddle" height="24" src="images/0602/image023.gif" width="23"/>的余子式
+<center>
+<img align="absmiddle" height="59" src="images/0602/image024.gif" width="103"/>，</center>
+　　在余子式前再冠以符号<img align="absmiddle" height="27" src="images/0602/image028.gif" width="51"/>，就得到代数余子式
+<center>
+<b>
+<img align="absmiddle" height="51" src="images/0602/image029.gif" width="143"/>
+</b>
+<b>．</b>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　定理：n阶行列式的值等于它的任意一行（列）的元素与其对应的代数余子式的乘积的和．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　这个定理叫做行列式按行（列）展开法则．<br clear="none"/>
+<b>　　推论</b>　行列式的某一行（列）的元素与另一行（列）对应元素的代数余子式乘积之和等于0．<br clear="none"/>
+　　利用按行（列）展开法则并结合行列式的性质，可以简化行列式的计算．<br clear="none"/>
+　　例如，设三阶行列式
+<center>
+<img align="absmiddle" height="91" src="images/0602/image030.gif" width="121"/>
+</center>
+　　则第一行的三个元素<img align="absmiddle" height="24" src="images/0602/image031.gif" width="79"/>对应的代数余子式分别为<img align="absmiddle" height="24" src="images/0602/image032.gif" width="84"/>，根据定理，行列式可以按第一行展开为：
+<center>
+<img align="absmiddle" height="24" src="images/0602/image033.gif" width="192"/>
+</center>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.2.1</strong>　计算行列式
+<center>
+<img align="absmiddle" height="75" src="images/0602/image034.gif" width="73"/>
+</center>
+　　<strong>解</strong>　<br clear="none"/><strong>　　方法1</strong>　对角线法（略）<br clear="none"/>
+　　<strong>方法2</strong>　按行（列）展开．例如可按第一行展开．<br clear="none"/>
+　　　　　　<img align="absmiddle" height="79" src="images/0602/image035.gif" width="411"/>
+<br clear="none"/>
+　　　　　　<img align="absmiddle" height="24" src="images/0602/image033.gif" width="192"/>
+<br clear="none"/>
+　　　　　　　<img align="absmiddle" height="21" src="images/0602/image036.gif" width="281"/>．<br clear="none"/>
+　　<strong>方法3</strong>　利用行列式的性质转化为特殊三角形
+<center>
+<img align="absmiddle" height="82" src="images/0602/image037.gif" width="529"/>
+</center>
+　　<strong>方法4</strong>
+<center>
+<img align="absmiddle" height="75" src="images/0602/image038.gif" width="373"/>．</center>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.2.2</strong>　计算行列式　
+<center>
+<img align="absmiddle" height="75" src="images/0602/image039.gif" width="160"/>
+</center>
+　　<strong>解</strong>　<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="91" src="images/0602/image042.gif" width="159"/>
+<img align="absmiddle" height="94" src="images/0602/image041.gif" width="294"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="91" src="images/0602/image044.gif" width="124"/>
+<img align="absmiddle" height="90" src="images/0602/image040.gif" width="311"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="117" src="images/0602/image046.gif" width="139"/>
+<img align="top" height="90" src="images/0602/image043.gif" width="302"/>
+<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="91" src="images/0602/image047.gif" width="143"/>
+<img align="absmiddle" height="60" src="images/0602/image045.gif" width="326"/>
+<br clear="none"/>
+<br clear="none"/>
+　　<strong>强调：</strong>对角线法则是我们求解三阶行列式的最基本的方法，必须熟练掌握．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.2.3</strong>
+<b>　</b>计算三阶行列式
+<center>
+<img align="absmiddle" height="79" src="images/0602/image048.gif" width="97"/>
+</center>
+　　分析：每列都出现一个a，两个b，考虑将第二列和第三列都加到第一列上去，于是第一列就有了公因式a+2b，然后可将此公因式提到行列式符号外．<br clear="none"/>
+
+　　<strong>解</strong>　<img align="absmiddle" height="79" src="images/0602/image050.gif" width="325"/>
+<br clear="none"/>
+　　　　　<img align="absmiddle" height="76" src="images/0602/image051.gif" width="466"/>
+<br clear="none"/>
+　　如果一个行列式的元素满足<img align="absmiddle" height="25" src="images/0602/image052.gif" width="57"/>，则称为对称行列式．如果主对角线上元素全为零，其它元素满足<img align="absmiddle" height="25" src="images/0602/image053.gif" width="68"/>，则称为反对称行列式．<br clear="none"/>
+　　例如，<img align="absmiddle" height="79" src="images/0602/image054.gif" width="79"/>是对称行列式．<br clear="none"/>
+　　<img align="absmiddle" height="79" src="images/0602/image055.gif" width="83"/>是反对称行列式．<br clear="none"/>
+　　可以证明，反对称行列式的值等于零．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_6" id="part2_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.2.4</strong>
+<b>　</b>证明3阶反对称行列式等于0．<br clear="none"/>
+　　<strong>证</strong>　设3阶反对称行列式
+<center>
+<img align="absmiddle" height="79" src="images/0602/image056.gif" width="153"/>
+</center>
+　　每行提取公因子<img align="absmiddle" height="21" src="images/0602/image057.gif" width="32"/>，可得
+<center>
+<img align="absmiddle" height="79" src="images/0602/image058.gif" width="273"/>
+</center>
+　　所以<img align="absmiddle" height="19" src="images/0602/image059.gif" width="44"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_7" id="part2_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.2.5</strong>
+<b>　</b>计算范得蒙<img align="absmiddle" height="21" src="images/0602/image060.gif" width="104"/>行列式
+<center>
+<img align="absmiddle" height="91" src="images/0602/image061.gif" width="83"/>
+</center>
+　　<strong>解</strong>　　　　<img align="absmiddle" height="79" src="images/0602/image062.gif" width="243"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="52" src="images/0602/image063.gif" width="192"/>　<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="52" src="images/0602/image064.gif" width="193"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="23" src="images/0602/image065.gif" width="152"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="23" src="images/0602/image066.gif" width="155"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_8" id="part2_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.2.6</strong>　解方程
+<center>
+<img align="absmiddle" height="91" src="images/0602/image067.gif" width="91"/>
+</center>
+　　<strong>解</strong>　∵<img align="absmiddle" height="91" src="images/0602/image068.gif" width="184"/>　<br clear="none"/>
+　　　　　　　　  　 <img align="absmiddle" height="48" src="images/0602/image069.gif" width="372"/>
+<br clear="none"/>
+　　∴方程为<img align="absmiddle" height="23" src="images/0602/image070.gif" width="79"/>，故方程的根为<img align="absmiddle" height="19" src="images/0602/image071.gif" width="37"/>或<img align="absmiddle" height="19" src="images/0602/image072.gif" width="37"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_9" id="part2_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">
+本节课需要掌握的内容是行列式的性质及其推论，行列式的降阶计算方法（按行（列）展开）．要求能熟练运用行列式的性质及其推论，运用按行（列）展开法则计算行列式．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_06_01" class="popup-questions" knowid="know_j_06_01" syncpart="part2_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="b" score="100">
+<p>23．（单选题）行列式<img src="images/0602/ch0602_clip_image001.gif" alt="" width="57" height="65" align="absmiddle">=（    ）</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0602/ch0602_clip_image002.gif" alt="" width="100" height="27" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0602/ch0602_clip_image003.gif" alt="" width="105" height="29" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0602/ch0602_clip_image004.gif" alt="" width="108" height="29" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0602/ch0602_clip_image005.gif" alt="" width="93" height="29" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】B</p>
+<p>【解析】<img src="images/0602/ch0602_clip_image006.gif" alt="" width="299" height="149" align="texttop"></p>
+<p>【知识点】<strong>行列式按行（列）展开法则</strong></p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</body>
+</html>
+

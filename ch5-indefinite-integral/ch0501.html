@@ -1,0 +1,636 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>5.1 原函数与不定积分的概念</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script>
+</head>
+<body>
+<div id="container">
+<center><h1>5.1 原函数与不定积分的概念</h1></center>
+<div class="page-part" code="part1_1" id="part1_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>前言</h2>
+<br clear="none"/>
+<span class="daan">　　一元函数的积分学由一元函数的不定积分与定积分这两个部分组成．这两个部分是密切相关的．我们先学习第一部分——<b>不定积分</b>．<br clear="none"/>
+</span>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、原函数与不定积分的概念</h2>
+<br clear="none"/>
+　　在第三章“导数与微分”中，我们学习过导函数的概念．如果<img align="absmiddle" height="24" src="images/0501/image001.gif" width="85"/>，则称<img align="absmiddle" height="23" src="images/0501/image002.gif" width="35"/>是<img align="absmiddle" height="23" src="images/0501/image003.gif" width="35"/>的导函数，现在我们反过来称<img align="absmiddle" height="23" src="images/0501/image003.gif" width="35"/>是<img align="absmiddle" height="23" src="images/0501/image002.gif" width="35"/>的一个原函数．
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义5.1：</strong>设在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上，函数<img align="absmiddle" height="23" src="images/0501/image005.gif" width="35"/>可导且满足
+<center>
+<img align="absmiddle" height="23" src="images/0501/image006.gif" width="85"/>，或<img align="absmiddle" height="23" src="images/0501/image007.gif" width="104"/>，</center>
+　　　 　　　 则称<img align="absmiddle" height="23" src="images/0501/image005.gif" width="35"/>是<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的一个原函数．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　 例如，在区间<img align="absmiddle" height="23" src="images/0501/image009.gif" width="63"/>上，因为<img align="absmiddle" height="29" src="images/0501/image010.gif" width="99"/>，即<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>是<img align="absmiddle" height="19" src="images/0501/image012.gif" width="35"/>的导数，所以反过来<img align="absmiddle" height="19" src="images/0501/image012.gif" width="35"/>是<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>的一个原函数，因为<img align="absmiddle" height="23" src="images/0501/image013.gif" width="68"/>=<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>，所以<img align="absmiddle" height="19" src="images/0501/image014.gif" width="56"/>也是<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>的一个原函数；又如，因为<img align="absmiddle" height="49" src="images/0501/image015.gif" width="141"/>，<img align="absmiddle" height="49" src="images/0501/image016.gif" width="163"/>，<img align="absmiddle" height="49" src="images/0501/image017.gif" width="163"/>，所以<img align="absmiddle" height="41" src="images/0501/image018.gif" width="68"/>、<img align="absmiddle" height="41" src="images/0501/image019.gif" width="91"/>与<img align="absmiddle" height="41" src="images/0501/image020.gif" width="91"/>都是<img align="absmiddle" height="19" src="images/0501/image021.gif" width="43"/>的原函数．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　在第三章“导数与微分”中，讨论的问题是：给定一个函数，求它的导函数，即导数．<br clear="none"/>
+　　本章讨论<strong>相反的问题</strong>：给定一个函数，求它的原函数．<br clear="none"/>
+　　首先明确两个问题：<br clear="none"/>
+　　（1） 函数具备什么条件时，其原函数一定存在？<br clear="none"/>
+　　（2） 如果一个函数存在原函数，那么原函数有多少个？<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定理5.1：</strong>（原函数存在定理）如果函数<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上连续，那么<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上一定有原函数，即一定存在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的函数<img align="absmiddle" height="23" src="images/0501/image005.gif" width="35"/>，使得
+<center>
+<img align="absmiddle" height="23" src="images/0501/image006.gif" width="85"/>，<img align="absmiddle" height="19" src="images/0501/image022.gif" width="37"/>．</center>
+</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　简单的说就是：连续函数必有原函数．由于初等函数在其定义区间上连续，所以初等函数在其定义区间上一定有原函数．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定理5.2：</b>设<img align="absmiddle" height="23" src="images/0501/image005.gif" width="35"/>是<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的一个原函数，则<br clear="none"/>
+　　 （1） <img align="absmiddle" height="23" src="images/0501/image023.gif" width="61"/>也是<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的原函数，其中<img align="absmiddle" height="19" src="images/0501/image024.gif" width="16"/>为任意常数；<br clear="none"/>
+　　 （2） <img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>的任意两个原函数之间，相差一个常数．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　 定理5.2<strong>表明</strong>，如果函数<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>有一个原函数存在，则必有无穷多个原函数，彼此之间仅相差一个常数．<br clear="none"/>
+　　 现在引进一个记号来表示<img align="absmiddle" height="23" src="images/0501/image002.gif" width="35"/>的全体原函数．<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<b>定义5.2：</b>函数<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的全体原函数称为<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>在<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上的不定积分，记为<img align="absmiddle" height="29" src="images/0501/image025.gif" width="59"/>．其中称记号<img align="absmiddle" height="29" src="images/0501/image026.gif" width="21"/>称为积分号，<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>为被积函数，<img align="absmiddle" height="23" src="images/0501/image027.gif" width="49"/>为被积表达式，<img align="absmiddle" height="15" src="images/0501/image028.gif" width="13"/>为积分变量．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　由定义5.2和定理5.2可知：记号<b>
+<img align="absmiddle" height="29" src="images/0501/image025.gif" width="59"/>
+</b>表示<img align="absmiddle" height="21" src="images/0501/image029.gif" width="36"/>的全体原函数，只需找出<img align="absmiddle" height="21" src="images/0501/image029.gif" width="36"/>的一个原函数<img align="absmiddle" height="21" src="images/0501/image030.gif" width="36"/>，则<img align="absmiddle" height="21" src="images/0501/image030.gif" width="36"/>
+<img align="absmiddle" height="19" src="images/0501/image031.gif" width="28"/>就是<img align="absmiddle" height="21" src="images/0501/image029.gif" width="36"/>的全体原函数，即<b>
+<img align="absmiddle" height="29" src="images/0501/image025.gif" width="59"/>
+<img align="absmiddle" height="23" src="images/0501/image032.gif" width="75"/>
+</b>．<br clear="none"/>
+　　例如，因为<img align="absmiddle" height="29" src="images/0501/image010.gif" width="99"/>，<img align="absmiddle" height="19" src="images/0501/image012.gif" width="35"/>是<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>的一个原函数，所以<img align="absmiddle" height="15" src="images/0501/image011.gif" width="36"/>的全体原函数为<img align="absmiddle" height="29" src="images/0501/image033.gif" width="133"/>；又如，因为<img align="absmiddle" height="49" src="images/0501/image015.gif" width="141"/>，<img align="absmiddle" height="41" src="images/0501/image018.gif" width="68"/>是<img align="absmiddle" height="19" src="images/0501/image021.gif" width="43"/>的一个原函数，所以<img align="absmiddle" height="19" src="images/0501/image021.gif" width="43"/>的全体原函数为<img align="absmiddle" height="41" src="images/0501/image034.gif" width="172"/>．<br clear="none"/>
+<br clear="none"/>
+　　 <span class="Title2">课堂练习1</span>
+<br clear="none"/>
+　　 1、<img align="absmiddle" height="19" src="images/0501/image035.gif" width="20"/>是不是3的原函数？试写出3的全体原函数．<br clear="none"/>
+　　 2、<img align="absmiddle" height="21" src="images/0501/image036.gif" width="24"/>是哪一个函数的原函数？<br clear="none"/>
+　　 3、<img align="absmiddle" height="23" src="images/0501/image037.gif" width="64"/>是哪一个函数的原函数？<br clear="none"/>
+　　 4、<img align="absmiddle" height="29" src="images/0501/image038.gif" width="104"/>是否正确？<br clear="none"/>
+　 　　<a act="sh" class="daan" elm="01" href="####" shape="rect"><img align="absmiddle"  src="images/daan.jpg" /></a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="01" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>解：</strong>
+<strong>1、</strong>因为<img align="absmiddle" height="25" src="images/0501/image039.gif" width="59"/>，所以<img align="absmiddle" height="19" src="images/0501/image035.gif" width="20"/>是3的一个原函数．3的全体原函数是<img align="absmiddle" height="19" src="images/0501/image040.gif" width="47"/>，即<img align="absmiddle" height="29" src="images/0501/image041.gif" width="96"/>．一般地有：<img align="absmiddle" height="29" src="images/0501/image042.gif" width="95"/>，<img align="absmiddle" height="19" src="images/0501/image043.gif" width="13"/>为非零常数．<br clear="none"/>
+　　<strong>2、</strong>因为<img align="absmiddle" height="28" src="images/0501/image044.gif" width="84"/>，所以<img align="absmiddle" height="21" src="images/0501/image036.gif" width="24"/>是<img align="absmiddle" height="21" src="images/0501/image045.gif" width="36"/>的原函数．<br clear="none"/>
+　　<strong>3、</strong>因为<img align="absmiddle" height="41" src="images/0501/image046.gif" width="135"/>，所以<img align="absmiddle" height="23" src="images/0501/image037.gif" width="64"/>是<img align="absmiddle" height="41" src="images/0501/image047.gif" width="44"/>的原函数．<br clear="none"/>
+　　<strong>4、</strong>因为<img align="absmiddle" height="28" src="images/0501/image048.gif" width="105"/>，所以<img align="absmiddle" height="21" src="images/0501/image049.gif" width="19"/>不是<img align="absmiddle" height="21" src="images/0501/image050.gif" width="19"/>的原函数，故<img align="absmiddle" height="29" src="images/0501/image038.gif" width="104"/>是错误的．</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例5.1.1</strong> 求<img align="absmiddle" height="41" src="images/0501/image051.gif" width="68"/>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="43" src="images/0501/image052.gif" width="133"/>，<img align="absmiddle" height="13" src="images/0501/image053.gif" width="12"/>
+<img align="absmiddle" height="17" src="images/0501/image054.gif" width="55"/>是<img align="absmiddle" height="41" src="images/0501/image055.gif" width="41"/>的一个原函数，故<br clear="none"/>
+<center>
+<img align="absmiddle" height="43" src="images/0501/image056.gif" width="157"/>（公式）</center>
+<br clear="none"/>
+　　<strong>例5.1.2</strong> 求<img align="absmiddle" height="29" src="images/0501/image057.gif" width="128"/>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="13" src="images/0501/image058.gif" width="15"/> <img align="absmiddle" height="57" src="images/0501/image059.gif" width="92"/>　<img align="absmiddle" height="23" src="images/0501/image060.gif" width="57"/>，<img align="absmiddle" height="13" src="images/0501/image061.gif" width="15"/>
+<img align="absmiddle" height="47" src="images/0501/image062.gif" width="39"/>为函数<img align="absmiddle" height="21" src="images/0501/image063.gif" width="21"/>的一个原函数，故<br clear="none"/>
+<center>
+<img align="absmiddle" height="47" src="images/0501/image064.gif" width="124"/>（公式）</center>
+　　例如，<img align="absmiddle" height="29" src="images/0501/image065.gif" width="31"/>
+<img align="absmiddle" height="19" src="images/0501/image066.gif" width="20"/>
+<img align="absmiddle" height="44" src="images/0501/image067.gif" width="157"/>．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">课堂练习2</span>
+<br clear="none"/>
+　　求下列不定积分：<br clear="none"/>
+　　　 <img align="absmiddle" height="29" src="images/0501/image068.gif" width="37"/>，<img align="absmiddle" height="29" src="images/0501/image069.gif" width="43"/>，<img align="absmiddle" height="41" src="images/0501/image070.gif" width="47"/>．<br clear="none"/>
+　　<a act="sh" class="daan" elm="02" href="####" shape="rect"><img align="absmiddle"  src="images/daan.jpg" /></a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="02" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>解：</strong>
+<img align="absmiddle" height="29" src="images/0501/image068.gif" width="37"/>
+<img align="absmiddle" height="41" src="images/0501/image071.gif" width="163"/>．<br clear="none"/>
+　　　　 <img align="absmiddle" height="29" src="images/0501/image069.gif" width="43"/>
+<img align="absmiddle" height="44" src="images/0501/image072.gif" width="156"/>
+<br clear="none"/>
+　　　　 <img align="absmiddle" height="41" src="images/0501/image070.gif" width="47"/>＝<img align="absmiddle" height="41" src="images/0501/image073.gif" width="244"/>
+<br clear="none"/>
+　　 请对照答案，你做对了吗？<br clear="none"/>
+　　 <strong>思考</strong>：如何验算自己的求解结果是否正确？<br clear="none"/>
+　　 再练习两个难一点的题．</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<span class="Title2">课堂练习3</span>
+<br clear="none"/>
+　　 求下列不定积分并进行验算：<img align="absmiddle" height="27" src="images/0501/image074.gif" width="64"/>，<img align="absmiddle" height="44" src="images/0501/image075.gif" width="44"/>．<br clear="none"/>
+　　<a act="sh" class="daan" elm="03" href="####" shape="rect"><img align="absmiddle"  src="images/daan.jpg" /></a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="03" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>解</strong>　<img align="absmiddle" height="27" src="images/0501/image074.gif" width="64"/>=<img align="absmiddle" height="73" src="images/0501/image076.gif" width="217"/>．<br clear="none"/>
+　　 <img align="absmiddle" height="44" src="images/0501/image075.gif" width="44"/>＝<img align="absmiddle" height="64" src="images/0501/image077.gif" width="248"/>．</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_6" id="part2_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.1.3</strong> 求<img align="absmiddle" height="41" src="images/0501/image078.gif" width="43"/>．<br clear="none"/>
+　　<strong>解</strong>　∵当<img align="absmiddle" height="19" src="images/0501/image079.gif" width="37"/>时，<img align="absmiddle" height="27" src="images/0501/image080.gif" width="43"/>，<img align="absmiddle" height="41" src="images/0501/image081.gif" width="140"/>，<br clear="none"/>
+　　       当<img align="absmiddle" height="19" src="images/0501/image082.gif" width="37"/>时，<img align="absmiddle" height="27" src="images/0501/image083.gif" width="52"/>， <img align="absmiddle" height="41" src="images/0501/image084.gif" width="227"/> ，<br clear="none"/>
+　　　 　∴当<img align="absmiddle" height="19" src="images/0501/image085.gif" width="37"/>时，<img align="absmiddle" height="21" src="images/0501/image086.gif" width="41"/>是函数<img align="absmiddle" height="41" src="images/0501/image087.gif" width="16"/>的一个原函数，从而
+<center>
+<img align="absmiddle" height="41" src="images/0501/image088.gif" width="121"/>（公式）</center>
+<br clear="none"/>
+　　<strong>例5.1.4</strong>　设曲线通过点<img align="absmiddle" height="23" src="images/0501/image089.gif" width="31"/>，且曲线上任意一点处的切线斜率等于该点横坐标的两倍．试求此曲线的方程．<br clear="none"/>
+　　<strong>解</strong>　设曲线方程为<img align="absmiddle" height="23" src="images/0501/image090.gif" width="60"/>，则由题设，曲线在点<img align="absmiddle" height="23" src="images/0501/image091.gif" width="57"/>处的斜率为<img align="absmiddle" height="23" src="images/0501/image092.gif" width="72"/>，于是
+<center>
+<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>＝<img align="absmiddle" height="29" src="images/0501/image093.gif" width="105"/>，</center>
+　　又因为曲线过点<img align="absmiddle" height="23" src="images/0501/image089.gif" width="31"/>，代入上式，得
+<center>
+<img align="absmiddle" height="19" src="images/0501/image094.gif" width="61"/>，</center>
+　　从而<img align="absmiddle" height="19" src="images/0501/image095.gif" width="49"/>．于是所求曲线的方程为<img align="absmiddle" height="27" src="images/0501/image096.gif" width="89"/>，即<img align="absmiddle" height="24" src="images/0501/image097.gif" width="68"/>．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_7" id="part2_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">两个重要的关系式</span>
+<br clear="none"/>
+　　∵<img align="absmiddle" height="29" src="images/0501/image025.gif" width="59"/>是<img align="absmiddle" height="23" src="images/0501/image008.gif" width="35"/>的原函数，<br clear="none"/>
+　　∴<img align="absmiddle" height="41" src="images/0501/image098.gif" width="125"/> 或 <img align="absmiddle" height="29" src="images/0501/image099.gif" width="131"/>；　（1）  （对<img align="absmiddle" height="23" src="images/0501/image100.gif" width="35"/>先积分，后求导或微分）<br clear="none"/>
+　　∵<img align="absmiddle" height="23" src="images/0501/image101.gif" width="35"/>是<img align="absmiddle" height="23" src="images/0501/image102.gif" width="39"/>的原函数，<br clear="none"/>
+　　∴<img align="absmiddle" height="29" src="images/0501/image103.gif" width="137"/> 或 <img align="absmiddle" height="29" src="images/0501/image104.gif" width="125"/>．　（2）　（对<img align="absmiddle" height="23" src="images/0501/image101.gif" width="35"/>先求导或微分，后积分）<br clear="none"/>
+　　这两个关系式告诉我们，微分运算<img align="absmiddle" height="19" src="images/0501/image105.gif" width="15"/>和求不定积分的运算<img align="absmiddle" height="29" src="images/0501/image026.gif" width="21"/>是互逆的，记号<img align="absmiddle" height="29" src="images/0501/image026.gif" width="21"/>和<img align="absmiddle" height="19" src="images/0501/image105.gif" width="15"/>连在一起时，或是抵消，或是抵消后相差一个常数．<br clear="none"/>
+　　例如，<img align="absmiddle" height="32" src="images/0501/image106.gif" width="165"/>，<img align="absmiddle" height="29" src="images/0501/image107.gif" width="201"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part3_1" id="part3_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、基本积分公式</h2>
+<br clear="none"/>
+　　由于不定积分是求导数或求微分的逆运算，所以有一个导数公式，就会有一个相对应的积分公式．由基本初等函数的导数公式可得如下基本积分公式．<br clear="none"/>
+
+　　（1） <img align="absmiddle" height="29" src="images/0501/image108.gif" width="67"/>
+<br clear="none"/>
+　　（2） <img align="absmiddle" height="29" src="images/0501/image109.gif" width="208"/>　特别地：<img align="absmiddle" height="29" src="images/0501/image110.gif" width="80"/>
+<br clear="none"/>
+　　（3） <img align="absmiddle" height="47" src="images/0501/image111.gif" width="211"/>
+<br clear="none"/>
+　　（4） <img align="absmiddle" height="41" src="images/0501/image088.gif" width="121"/>（有时绝对值符号也可忽略不写）<br clear="none"/>
+　　（5） <img align="absmiddle" height="41" src="images/0501/image112.gif" width="147"/>（或<img align="absmiddle" height="41" src="images/0501/image113.gif" width="160"/>）<br clear="none"/>
+　　（6） <img align="absmiddle" height="47" src="images/0501/image114.gif" width="157"/>（或<img align="absmiddle" height="47" src="images/0501/image115.gif" width="171"/>）<br clear="none"/>
+　　（7） <img align="absmiddle" height="29" src="images/0501/image033.gif" width="133"/>
+<br clear="none"/>
+　　（8） <img align="absmiddle" height="29" src="images/0501/image116.gif" width="144"/>
+<br clear="none"/>
+　　（9） <img align="absmiddle" height="41" src="images/0501/image117.gif" width="211"/>
+<br clear="none"/>
+　　（10） <img align="absmiddle" height="41" src="images/0501/image118.gif" width="219"/>
+<br clear="none"/>
+　　（11） <img align="absmiddle" height="29" src="images/0501/image119.gif" width="167"/>
+<br clear="none"/>
+　　（12） <img align="absmiddle" height="29" src="images/0501/image120.gif" width="177"/>
+<br clear="none"/>
+　　（13） <img align="absmiddle" height="44" src="images/0501/image121.gif" width="115"/>
+<br clear="none"/>
+　　（14） <img align="absmiddle" height="29" src="images/0501/image122.gif" width="103"/>
+<br clear="none"/>
+　　以上十四个基本积分公式是求不定积分的基础，其他函数的不定积分往往经过运算变形后，最终都归结为这些公式的运用．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例5.1.5</strong>　求<img align="absmiddle" height="44" src="images/0501/image123.gif" width="55"/>　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="44" src="images/0501/image123.gif" width="55"/>
+<img align="absmiddle" height="40" src="images/0501/image124.gif" width="65"/>
+<img align="absmiddle" height="65" src="images/0501/image125.gif" width="124"/>
+<img align="absmiddle" height="24" src="images/0501/image126.gif" width="73"/>．<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.1.6</strong>　求<img align="absmiddle" height="29" src="images/0501/image127.gif" width="60"/>　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="29" src="images/0501/image127.gif" width="60"/>
+<img align="absmiddle" height="29" src="images/0501/image128.gif" width="76"/>
+<img align="absmiddle" height="48" src="images/0501/image129.gif" width="85"/>＝<img align="absmiddle" height="48" src="images/0501/image130.gif" width="75"/>．<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.1.7</strong>　求<img align="absmiddle" height="29" src="images/0501/image131.gif" width="59"/>　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　∵<img align="absmiddle" height="24" src="images/0501/image132.gif" width="112"/> （<img align="absmiddle" height="20" src="images/zhu.gif" width="20"/>：这里用到中学所学的公式：<img align="absmiddle" height="21" src="images/0501/image133.gif" width="55"/>，<img align="absmiddle" height="21" src="images/0501/image134.gif" width="85"/>）<br clear="none"/>
+　　　　 ∴<img align="absmiddle" height="29" src="images/0501/image131.gif" width="59"/>
+<img align="absmiddle" height="29" src="images/0501/image135.gif" width="59"/>
+<img align="absmiddle" height="37" src="images/0501/image136.gif" width="64"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part4_1" id="part4_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>三、不定积分的线性运算法则</h2>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr height="119">
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-1.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定理5.3：</strong>设在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上，函数<img align="absmiddle" height="23" src="images/0501/image100.gif" width="35"/>和<img align="absmiddle" height="23" src="images/0501/image137.gif" width="33"/>的原函数都存在，则在区间<img align="absmiddle" height="17" src="images/0501/image004.gif" width="13"/>上：<img align="absmiddle" height="23" src="images/0501/image138.gif" width="12"/>
+<br clear="none"/>
+　　 （1） <img align="absmiddle" height="29" src="images/0501/image139.gif" width="249"/>；　<br clear="none"/>
+　　 （2） <img align="absmiddle" height="29" src="images/0501/image140.gif" width="143"/>　（<img align="absmiddle" height="19" src="images/0501/image043.gif" width="13"/>为常数，<img align="absmiddle" height="19" src="images/0501/image141.gif" width="39"/>）</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>说明：</strong>
+<br clear="none"/>
+　　（1）定理给出的两条运算性质可简记为：函数代数和的不定积分等于它们的不定积分的代数和；被积函数中的非零常数因子可以提到积分号外．<br clear="none"/>
+
+　　（2）定理中第一条运算性质可以推广到有限多个函数的代数和的情形，即
+<center>
+<img align="absmiddle" height="29" src="images/0501/image142.gif" width="448"/>
+</center>
+　　（3）定理给出的两条运算性质称为不定积分的线性性质．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_2" id="part4_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例5.1.8</strong>　求<img align="absmiddle" height="53" src="images/0501/image143.gif" width="151"/>．　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="53" src="images/0501/image143.gif" width="151"/>
+<img align="absmiddle" height="47" src="images/0501/image144.gif" width="163"/>
+<img align="absmiddle" height="19" src="images/0501/image145.gif" width="168"/>．<br clear="none"/>
+　　<strong>注：</strong>
+<img align="absmiddle" height="45" src="images/0501/image146.gif" width="508"/>．<br clear="none"/>
+　　其中<img align="absmiddle" height="24" src="images/0501/image147.gif" width="76"/>为任意常数．<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.1.9</strong>　求<img align="absmiddle" height="33" src="images/0501/image148.gif" width="95"/>．　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="33" src="images/0501/image149.gif" width="93"/>
+<img align="absmiddle" height="40" src="images/0501/image150.gif" width="137"/>
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="53" src="images/0501/image151.gif" width="151"/>
+<img align="absmiddle" height="40" src="images/0501/image152.gif" width="181"/>
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="44" src="images/0501/image153.gif" width="173"/>
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="44" src="images/0501/image154.gif" width="159"/>．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_3" id="part4_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.1.10</strong>　求<img align="absmiddle" height="44" src="images/0501/image155.gif" width="107"/>　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="44" src="images/0501/image155.gif" width="107"/>
+<img align="absmiddle" height="56" src="images/0501/image156.gif" width="84"/>
+<img align="absmiddle" height="64" src="images/0501/image157.gif" width="111"/>
+<br clear="none"/>
+　　　　　　　　　　　　 <img align="absmiddle" height="53" src="images/0501/image158.gif" width="113"/>
+<img align="absmiddle" height="45" src="images/0501/image159.gif" width="119"/>．<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.1.11</strong>　求<img align="absmiddle" height="29" src="images/0501/image160.gif" width="68"/>　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="29" src="images/0501/image160.gif" width="68"/>
+<img align="absmiddle" height="29" src="images/0501/image161.gif" width="109"/>
+<img align="absmiddle" height="29" src="images/0501/image162.gif" width="120"/>
+<img align="absmiddle" height="19" src="images/0501/image163.gif" width="99"/>．<br clear="none"/>
+　　<strong>
+<img align="absmiddle" height="20" src="images/zhu.gif" width="20"/>
+</strong>
+<strong>：</strong>这里利用了三角恒等式 <img align="absmiddle" height="21" src="images/0501/image164.gif" width="120"/>．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_4" id="part4_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.1.12</strong>　求<img align="absmiddle" height="41" src="images/0501/image165.gif" width="96"/>．　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="41" src="images/0501/image165.gif" width="96"/>
+<img align="absmiddle" height="44" src="images/0501/image166.gif" width="137"/>
+<img align="absmiddle" height="51" src="images/0501/image167.gif" width="229"/>
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="45" src="images/0501/image168.gif" width="151"/>
+<img align="absmiddle" height="29" src="images/0501/image169.gif" width="144"/>
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="29" src="images/0501/image170.gif" width="159"/>
+<img align="absmiddle" height="19" src="images/0501/image171.gif" width="120"/>．<br clear="none"/>
+　　<strong>
+<img align="absmiddle" height="20" src="images/zhu.gif" width="20"/>：</strong>这里利用了三角恒等式 <img align="absmiddle" height="21" src="images/0501/image172.gif" width="119"/>．<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.1.13</strong>　求<img align="absmiddle" height="44" src="images/0501/image173.gif" width="68"/>．　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　解　<img align="absmiddle" height="44" src="images/0501/image173.gif" width="68"/>
+<img align="absmiddle" height="44" src="images/0501/image174.gif" width="112"/>
+<img align="absmiddle" height="51" src="images/0501/image175.gif" width="148"/>
+<br clear="none"/>
+　　　　　　　　　 <img align="absmiddle" height="45" src="images/0501/image176.gif" width="148"/>
+<img align="absmiddle" height="44" src="images/0501/image177.gif" width="151"/>．</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_5" id="part4_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.1.14</strong>　求<img align="absmiddle" height="61" src="images/0501/image178.gif" width="116"/>．　　<a act="click_open" elm="pa050101.html" href="####" shape="rect" wh="430,200">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　利用三角公式：<img align="absmiddle" height="41" src="images/0501/image179.gif" width="129"/>，得<br clear="none"/>
+　　<img align="absmiddle" height="69" src="images/0501/image180.gif" width="399"/>
+<br clear="none"/>
+　　　　　　　　　　 <img align="absmiddle" height="41" src="images/0501/image181.gif" width="260"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_6" id="part4_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">课堂练习4</span>
+<br clear="none"/>
+　　求下列不定积分：<img align="absmiddle" height="44" src="images/0501/image182.gif" width="77"/>，　<img align="absmiddle" height="48" src="images/0501/image183.gif" width="92"/>，　<img align="absmiddle" height="41" src="images/0501/image184.gif" width="67"/>．<br clear="none"/>
+　　<a act="sh" class="daan" elm="04" href="####" shape="rect"><img align="absmiddle"  src="images/daan.jpg" /></a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="04" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>解：</strong> <img align="absmiddle" height="44" src="images/0501/image182.gif" width="77"/>
+<img align="absmiddle" height="47" src="images/0501/image185.gif" width="300"/>
+<br clear="none"/>
+　　　　　　　　　 <img align="absmiddle" height="41" src="images/0501/image186.gif" width="180"/>．<br clear="none"/>
+　　　 <img align="absmiddle" height="51" src="images/0501/image187.gif" width="389"/>
+<br clear="none"/>
+　　　　　　　　　 <img align="absmiddle" height="41" src="images/0501/image188.gif" width="253"/>
+<br clear="none"/>
+　　　 <img align="absmiddle" height="41" src="images/0501/image189.gif" width="69"/>
+<img align="absmiddle" height="45" src="images/0501/image190.gif" width="348"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<img align="absmiddle" height="20" src="images/zhu.gif" width="20"/>：这里利用了三角降幂公式 <img align="absmiddle" height="41" src="images/0501/image191.gif" width="141"/>．<br clear="none"/>
+　　对照答案，做对了吗？</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part4_7" id="part4_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.1.15</strong>　已知<img align="absmiddle" height="23" src="images/0501/image192.gif" width="116"/>，求<img align="absmiddle" height="23" src="images/0501/image100.gif" width="35"/>．<br clear="none"/>
+　　思路　可先由<img align="absmiddle" height="24" src="images/0501/image193.gif" width="60"/>求出<img align="absmiddle" height="24" src="images/0501/image194.gif" width="39"/>，再对<img align="absmiddle" height="24" src="images/0501/image194.gif" width="39"/>积分求出<img align="absmiddle" height="23" src="images/0501/image100.gif" width="35"/>．<br clear="none"/>
+　　<strong>解</strong>　因为<img align="absmiddle" height="24" src="images/0501/image195.gif" width="200"/>，<br clear="none"/>
+　　所以　<img align="absmiddle" height="24" src="images/0501/image196.gif" width="97"/>．<br clear="none"/>
+　　故　<img align="absmiddle" height="41" src="images/0501/image197.gif" width="300"/>．</td>
+</tr>
+</table>
+</div>
+
+
+</div>
+</body>
+</html>
+

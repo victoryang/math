@@ -1,0 +1,314 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>4.1 微分中值定理</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>4.1 微分中值定理</h1></center>
+<div class="page-part" code="part1_1" id="part1_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>前言</h2>
+<br clear="none"/>
+　　中值定理揭示了函数在某区间上的整体性质，与函数在该区间内部某一点处的导数之间的关系，因而称为<span class="style3">中值定理</span>．中值定理有着重大的理论价值，因而也称为<span class="style3">微分基本定理</span>．<br clear="none"/>
+<br clear="none"/>
+　　<span class="style4">极值的概念：</span>
+<br clear="none"/>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="266" width="444">
+<param name="movie" value="flash/41001.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="266" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/41001.swf" type="application/x-shockwave-flash" width="444"/>
+</object>
+</center>
+<br clear="none"/>
+　　如果把图中函数曲线<img align="absmiddle" height="23" src="images/0401/image009.gif" width="60"/>的图形直观地理解为连绵起伏的群山，那么那些山峰的峰顶（上凸之处）即为<span class="style3">极大值</span>，那些谷底（下凹之处）即为<span class="style3">极小值</span>，<img align="absmiddle" height="15" src="images/0401/image011.gif" width="13"/>轴上对应极大值和极小值的点分别称为<span class="style3">极大值点</span>和<span class="style3">极小值点</span>．<br clear="none"/>
+<br clear="none"/>
+　　由此可见，图中的曲线有极大值三处，相应的极大值点分别为<img align="absmiddle" height="23" src="images/0401/image013.gif" width="19"/>,<img align="absmiddle" height="23" src="images/0401/image015.gif" width="19"/>,<img align="absmiddle" height="24" src="images/0401/image017.gif" width="19"/>；有极小值四处，相应的极小值点分别为<img align="absmiddle" height="23" src="images/0401/image019.gif" width="16"/>,<img align="absmiddle" height="24" src="images/0401/image021.gif" width="17"/>,<img align="absmiddle" height="24" src="images/0401/image023.gif" width="17"/>,<img align="absmiddle" height="24" src="images/0401/image025.gif" width="19"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">　　<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　极值的定义　设函数<img align="absmiddle" height="21" src="images/0401/image040.gif" width="36"/>在<img align="absmiddle" height="24" src="images/0401/image042.gif" width="19"/>的某个邻域内恒有<img align="absmiddle" height="24" src="images/0401/image044.gif" width="91"/>或<br clear="none"/>
+（<img align="absmiddle" height="24" src="images/0401/image046.gif" width="91"/>）成立，则称<img align="absmiddle" height="24" src="images/0401/image048.gif" width="44"/>是函数<img align="absmiddle" height="23" src="images/0401/image050.gif" width="35"/>的一个极大值(或极小值)．<br clear="none"/>
+　　极大值与极小值统称为<strong>极值</strong>，使函数取得极值的点称为<strong>极值点</strong>．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　可见，极大值就是局部最大值，极小值就是局部最小值．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+　
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td  colspan="1" rowspan="1">
+<h2>三个中值定理</h2>
+<br clear="none"/>
+　　<span class="Title2">
+<span class="style4">费马定理</span>　<span class="style4">罗尔定理</span>　<span class="style4">拉格朗日中值定理</span>
+</span>
+<br clear="none"/>
+<br clear="none"/>
+　　<span class="Title2">1、费马定理</span>
+<br clear="none"/>
+　　<span class="bold">若函数<img align="absmiddle" height="23" src="images/0401/image050.gif" width="35"/>在<img align="absmiddle" height="24" src="images/0401/image042.gif" width="19"/>处可导，并且<img align="absmiddle" height="24" src="images/0401/image042.gif" width="19"/>是极值点，则<img align="absmiddle" src="images/0401/image055.gif"/>．</span>
+<br clear="none"/>
+<br clear="none"/>
+　　根据导数的<span class="style3">几何意义</span>，某点导数为零，即曲线在该点的切线斜率为零，亦即曲线在该点的切线平行于<img align="absmiddle" src="images/0401/image011.gif"/>轴．<br clear="none"/>
+<br clear="none"/>
+　　费马定理的<span class="style3">几何意义</span>为：若<img align="absmiddle" height="24" src="images/0401/image042.gif" width="19"/>是函数<img align="absmiddle" src="images/0401/image058.gif"/>的极值点，且函数<img align="absmiddle" src="images/0401/image058.gif"/>在<img align="absmiddle" height="24" src="images/0401/image042.gif" width="19"/>处可导，则曲线<img align="absmiddle" src="images/0401/image009.gif"/>在点<img align="absmiddle" src="images/0401/image061.gif"/>处的切线一定是水平的．<br clear="none"/>
+<br clear="none"/>
+　　我们将导数为零的点称为<span class="style3">驻点</span>．则费马定理又可表述为:
+<span class="bold">
+<span class="style3">可导的极值点一定是驻点</span>．</span>
+<br clear="none"/>
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="266" width="444">
+<param name="movie" value="flash/41002.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="266" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/41002.swf" type="application/x-shockwave-flash" width="444"/>
+</object>
+</center>
+<br clear="none"/>
+　　例如，图中的点<img align="absmiddle" height="23" src="images/0401/image019.gif" width="16"/>是可导的极值点，画出曲线在此点的切线，可以看出，它是水平的，从而切线斜率为零，即导数为零，所以点<img align="absmiddle" height="23" src="images/0401/image019.gif" width="16"/>是驻点．点<img align="absmiddle" height="23" src="images/0401/image013.gif" width="19"/>,<img align="absmiddle" height="23" src="images/0401/image015.gif" width="19"/>,<img align="absmiddle" height="24" src="images/0401/image023.gif" width="17"/>,<img align="absmiddle" height="24" src="images/0401/image017.gif" width="19"/>,<img align="absmiddle" height="24" src="images/0401/image025.gif" width="19"/>也都是可导的极值点，从而也都是驻点．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">2、罗尔定理</span>
+<br clear="none"/>
+<object align="right" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="162" width="180">
+<param name="movie" value="flash/41003.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed align="right" height="162" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/41003.swf" type="application/x-shockwave-flash" width="180"/>
+</object> 　　设函数<img align="absmiddle" height="23" src="images/0401/image058.gif" width="35"/>满足<br clear="none"/>
+　　(1)在闭区间<img align="absmiddle" height="23" src="images/0401/image078.gif" width="35"/>上连续，<br clear="none"/>
+　　(2)在开区间<img align="absmiddle" height="23" src="images/0401/image080.gif" width="36"/>内可导，<br clear="none"/>
+　　(3)<img align="absmiddle" height="23" src="images/0401/image082.gif" width="79"/>
+<br clear="none"/>
+　　则至少存在一点<img align="absmiddle" height="23" src="images/0401/image084.gif" width="60"/>，使得<img align="absmiddle" height="23" src="images/0401/image086.gif" width="63"/>，即<img align="absmiddle" height="23" src="images/0401/image058.gif" width="35"/>在<img align="absmiddle" height="23" src="images/0401/image080.gif" width="36"/>内至少有一个<strong>驻点</strong>．<br clear="none"/>
+<br clear="none"/>
+　　罗尔定理的<span class="style3">几何意义</span>是：如果函数<img align="absmiddle" height="23" src="images/0401/image058.gif" width="35"/>满足所给的三个条件时，则在区间内部至少能找到一个点，该点处切线是水平的．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">3、拉格朗日中值定理</span>
+<br clear="none"/>
+　　设函数<img align="absmiddle" height="23" src="images/0401/image058.gif" width="35"/>在闭区间<img align="absmiddle" height="23" src="images/0401/image078.gif" width="35"/>上连续，在开区间<img align="absmiddle" height="23" src="images/0401/image080.gif" width="36"/>内可导，则在<img align="absmiddle" height="23" src="images/0401/image080.gif" width="36"/>内至少存在一点<img align="absmiddle" height="21" src="images/0401/image103.gif" width="13"/>，使得<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" class="bold" colspan="1" rowspan="1">
+<img align="absmiddle" height="23" src="images/0401/image105.gif" width="175"/>
+</td>
+</tr>
+</table>
+即<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" class="bold" colspan="1" rowspan="1">
+<img align="absmiddle" height="41" src="images/0401/image107.gif" width="133"/>
+</td>
+</tr>
+</table>
+<strong>
+<font color="#0000FF">
+<object align="right" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="165" width="180">
+<param name="movie" value="flash/41004.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed align="right" height="165" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/41004.swf" type="application/x-shockwave-flash" width="180"/>
+</object>
+</font>
+</strong>
+<br clear="none"/>
+<br clear="none"/>
+　　注意到结论中，等式<img align="absmiddle" height="41" src="images/0401/image112.gif" width="135"/>的右端正好是连接A点和B点的直线的斜率（两点的纵坐标之差与两点的横坐标之差的比值），所以拉格朗日中值定理的几何意义是：在<img align="absmiddle" height="23" src="images/0401/image080.gif" width="36"/>内至少能找到一点，该点处的切线平行于弦<img align="absmiddle" height="17" src="images/0401/image115.gif" width="27"/>．例如图五中的点<img align="absmiddle" height="21" src="images/0401/image103.gif" width="13"/>，曲线在该点处的切线即平行于弦<img align="absmiddle" height="17" src="images/0401/image115.gif" width="27"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题：</span>
+<br clear="none"/>
+　　<span class="bold">例题4.1.1：</span>在区间<img align="absmiddle" height="23" src="images/0401/image118.gif" width="39"/>上满足罗尔定理条件的函数是( 　　)．<a act="click_open" elm="pa040101.html" href="####" shape="rect" wh="400,200">相关定理提示&gt;&gt;</a>
+<table border="0" cellpadding="2" cellspacing="5">
+<tr>
+<td colspan="1" rowspan="1">      </td>
+<td colspan="1" rowspan="1">A.<img align="absmiddle" height="41" src="images/0401/image120.gif" width="63"/>
+</td>
+<td colspan="1" rowspan="1"> </td>
+<td colspan="1" rowspan="1">B.<img align="absmiddle" height="25" src="images/0401/image122.gif" width="75"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">      </td>
+<td colspan="1" rowspan="1">C.<img align="absmiddle" height="17" src="images/0401/image124.gif" width="40"/>
+</td>
+<td colspan="1" rowspan="1"> </td>
+<td colspan="1" rowspan="1">D.<img align="absmiddle" height="24" src="images/0401/image126.gif" width="68"/>
+</td>
+</tr>
+</table>
+　　<span class="bold">解</span>：A选项中的函数<img align="absmiddle" height="41" src="images/0401/image120.gif" width="63"/>在<img align="absmiddle" height="19" src="images/0401/image128.gif" width="37"/>处无定义，从而在<img align="absmiddle" height="23" src="images/0401/image118.gif" width="39"/>上有间断点，即在<img align="absmiddle" height="23" src="images/0401/image118.gif" width="39"/>上不连续，所以不满足罗尔定理．<br clear="none"/>
+　　B选项中的函数<img align="absmiddle" height="25" src="images/0401/image122.gif" width="75"/>在<img align="absmiddle" height="23" src="images/0401/image118.gif" width="39"/>上连续，而且在开区间<img align="absmiddle" height="23" src="images/0401/image130.gif" width="40"/>是可导的，导数是<img align="absmiddle" height="23" src="images/0401/image132.gif" width="51"/>，但是在区间的两个端点处函数值不相等，所以也不满足罗尔定理的条件．<br clear="none"/>
+　　C选项中的函数<img align="absmiddle" height="17" src="images/0401/image124.gif" width="40"/>，显然在区间的两个端点处函数值不相等，也不符合罗尔定理的条件．<br clear="none"/>
+　　D选项中的函数<img align="absmiddle" height="24" src="images/0401/image126.gif" width="68"/>显然在闭区间<img align="absmiddle" height="23" src="images/0401/image118.gif" width="39"/>上连续，在开区间<img align="absmiddle" height="23" src="images/0401/image130.gif" width="40"/>内可导，且<img align="absmiddle" height="23" src="images/0401/image136.gif" width="107"/>，所以满足罗尔定理的条件．选D．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="bold">例题4.1.2：</span>函数<img align="absmiddle" height="21" src="images/0401/image138.gif" width="55"/>在区间<img align="absmiddle" height="23" src="images/0401/image140.gif" width="31"/>上使拉格朗日中值定理结论成立的<img align="absmiddle" height="21" src="images/0401/image103.gif" width="13"/>是(　　 )．<a act="click_open" elm="pa040102.html" href="####" shape="rect" wh="400,188">相关定理提示&gt;&gt;</a> 　　
+<table border="0" cellpadding="2" cellspacing="5">
+<tr>
+<td colspan="1" rowspan="1">      </td>
+<td colspan="1" rowspan="1">A.<img align="absmiddle" height="41" src="images/0401/image143.gif" width="37"/>
+</td>
+<td colspan="1" rowspan="1"> </td>
+<td colspan="1" rowspan="1">B.<img align="absmiddle" height="19" src="images/0401/image145.gif" width="32"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" rowspan="1">      </td>
+<td colspan="1" rowspan="1">C.<img align="absmiddle" height="41" src="images/0401/image147.gif" width="35"/>
+</td>
+<td colspan="1" rowspan="1"> </td>
+<td colspan="1" rowspan="1">D.<img align="absmiddle" height="41" src="images/0401/image149.gif" width="35"/>
+</td>
+</tr>
+</table>
+　　<span class="bold">分析：</span>对照拉格朗日中值定理，结论中的点<img align="absmiddle" height="21" src="images/0401/image103.gif" width="13"/>应满足等式<img align="absmiddle" height="41" src="images/0401/image152.gif" width="131"/>．<br clear="none"/>
+　　<span class="bold">解：</span>令<img align="absmiddle" height="41" src="images/0401/image154.gif" width="125"/>，而<img align="absmiddle" height="23" src="images/0401/image156.gif" width="111"/>，<img align="absmiddle" height="41" src="images/0401/image158.gif" width="67"/>，所以有
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" colspan="1" rowspan="1">
+<img align="absmiddle" height="44" src="images/0401/image160.gif" width="64"/>
+</td>
+</tr>
+</table>
+　　解得<img align="absmiddle" height="21" src="images/0401/image162.gif" width="57"/>．故应选B．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_6" id="part2_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="bold">例题4.1.3：</span>求证：当<img align="absmiddle" height="19" src="images/0401/image164.gif" width="36"/>时，<img align="absmiddle" height="23" src="images/0401/image166.gif" width="65"/>． 　<a act="click_open" elm="pa040102.html" href="####" shape="rect" wh="400,188">相关定理提示&gt;&gt;</a>
+<br clear="none"/>
+　　<span class="bold">解</span>：设<img align="absmiddle" height="25" src="images/0401/image168.gif" width="64"/>，<img align="absmiddle" height="23" src="images/0401/image058.gif" width="35"/>在闭区间<img align="absmiddle" height="23" src="images/0401/image171.gif" width="33"/>
+<img align="absmiddle" height="23" src="images/0401/image173.gif" width="47"/>上连续，在开区间<img align="absmiddle" height="23" src="images/0401/image175.gif" width="36"/>内可导，且<img align="absmiddle" height="25" src="images/0401/image177.gif" width="68"/>，满足拉格朗日中值定理的条件，所以，在开区间<img align="absmiddle" height="23" src="images/0401/image175.gif" width="36"/>内至少有一点<img align="absmiddle" height="19" src="images/0401/image179.gif" width="16"/>，使得
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" colspan="1" rowspan="1">
+<img align="absmiddle" height="41" src="images/0401/image181.gif" width="136"/>
+</td>
+</tr>
+</table>
+　　即<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td align="center" colspan="1" rowspan="1">
+<img align="absmiddle" height="44" src="images/0401/image183.gif" width="73"/>，<img align="absmiddle" height="19" src="images/0401/image185.gif" width="63"/>
+</td>
+</tr>
+</table>
+　　 而<img align="absmiddle" height="23" src="images/0401/image187.gif" width="73"/>，所以，<img align="absmiddle" height="44" src="images/0401/image189.gif" width="63"/>，即<img align="absmiddle" height="23" src="images/0401/image191.gif" width="63"/>，亦即<img align="absmiddle" height="23" src="images/0401/image193.gif" width="64"/>
+<img align="absmiddle" height="23" src="images/0401/image173.gif" width="47"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3" id="part3" width="100%">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>两个重要推论</h2>
+<br clear="none"/>
+　　<span class="bold">推论1</span>：若<img align="absmiddle" height="23" src="images/0401/image195.gif" width="37"/>在区间<img align="absmiddle" height="17" src="images/0401/image200.gif" width="13"/>上的导数恒为零，则<img align="absmiddle" height="23" src="images/0401/image195.gif" width="37"/>在区间<img align="absmiddle" height="17" src="images/0401/image200.gif" width="13"/>上为常数函数．<br clear="none"/>
+　　显然：函数为常数的充分必要条件是其导数为零．<br clear="none"/>
+<br clear="none"/>
+　　<span class="bold">推论2：</span>若在区间<img align="absmiddle" height="17" src="images/0401/image200.gif" width="13"/>内<img align="absmiddle" height="21" src="images/0401/image202.gif" width="97"/>，则在<img align="absmiddle" height="17" src="images/0401/image200.gif" width="13"/>内恒有<br clear="none"/>
+　　　　　　　　　<img align="absmiddle" height="21" src="images/0401/image204.gif" width="113"/>　　（C为常数）<br clear="none"/>
+　　此推论告诉我们，导数相等的两个函数，它们彼此之间至多相差一个常数．例如<img align="absmiddle" height="19" src="images/0401/image206.gif" width="35"/>和<img align="absmiddle" height="19" src="images/0401/image208.gif" width="56"/>的导数相等，均为<img align="absmiddle" height="15" src="images/0401/image210.gif" width="36"/>，它们之间相差3．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</body>
+</html>
+

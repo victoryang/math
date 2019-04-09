@@ -1,0 +1,197 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>5.5 定积分的概念及其几何意义</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>5.5 定积分的概念及其几何意义</h1></center>
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、定积分的概念</h2>
+<object align="right" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="203" width="343">
+<param name="movie" value="flash/51001.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed align="right" height="203" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/51001.swf" type="application/x-shockwave-flash" width="343"/>
+</object>
+<br clear="none"/>
+　　<strong>曲边梯形的面积</strong>
+<br clear="none"/>
+<img align="absmiddle" height="2" src="images/0505/image002.gif" width="2"/>
+<img align="absmiddle" height="3" src="images/0505/image003.gif" width="2"/> 　设<img align="absmiddle" height="21" src="images/0505/image004.gif" width="61"/>在区间<img align="absmiddle" height="23" src="images/0505/image005.gif" width="35"/>上非负、连续．由直线<img align="absmiddle" src="images/0505/image006.gif"/>，<img align="absmiddle" height="21" src="images/0505/image008.gif" width="39"/>（<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴）及曲线<img align="absmiddle" height="21" src="images/0505/image004.gif" width="61"/>所围成的图形称为曲边梯形，其中曲线弧称为曲边．<br clear="none"/>
+　　在区间<img align="absmiddle" height="23" src="images/0505/image005.gif" width="35"/>内任意插入若干个分点，将<img align="absmiddle" height="23" src="images/0505/image005.gif" width="35"/>分为若干个小区间．然后过每个分点作<img align="absmiddle" height="17" src="images/0505/image010.gif" width="15"/>轴的平行线，将曲边梯形分割为若干个窄曲边梯形．<br clear="none"/>
+　　由于这些小区间很小，曲线<img align="absmiddle" height="21" src="images/0505/image004.gif" width="61"/>在小区间上的变化不是很大，所以可以把每一个窄曲边梯形近似地看成是一个窄的矩形．窄矩形的底就是小区间，取小区间上任意的一点，以该点处的高<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>作为窄矩形的高．以窄矩形的面积近似代替窄曲边梯形的面积．<br clear="none"/>
+　　每个窄曲边梯形的面积都用相应的窄矩形的面积来近似代替，将所有这些窄矩形的面积相加，便得到了整个曲边梯形面积的近似值．通过右图动画直观地来分析一下．
+　　显然，按照刚才的方法，在区间[a,b]上插入的分点越多，所得到的小矩形也越多，用所有小矩形面积之和来近似表示曲边梯形的面积，所产生的误差也越小，即，对区间<img align="absmiddle" height="21" src="images/0505/image013.gif" width="36"/>的分割越细，小矩形面积之和也就越接近于曲边梯形的面积．<br clear="none"/>
+　　将<img align="absmiddle" height="21" src="images/0505/image013.gif" width="36"/>无限细分，即使每个小区间的长度趋于零，通过这样一个极限过程，就得到了曲边梯形的面积的精确值．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　将上面的分析过程用数学的语言描述如下．<br clear="none"/>
+　　（1）　分割：在<img align="absmiddle" height="21" src="images/0505/image013.gif" width="36"/>内任取<img align="absmiddle" height="19" src="images/0505/image014.gif" width="33"/>个分点<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="21" src="images/0505/image015.gif" width="179"/>，<br clear="none"/>
+　　把<img align="absmiddle" height="21" src="images/0505/image013.gif" width="36"/>分割成<img align="absmiddle" height="15" src="images/0505/image016.gif" width="13"/>个小区间，第<img align="absmiddle" height="17" src="images/0505/image017.gif" width="9"/>个小区间<img align="absmiddle" height="21" src="images/0505/image018.gif" width="57"/>的长度为<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="21" src="images/0505/image019.gif" width="177"/>．<br clear="none"/>
+　　过每一分点作平行于<img align="absmiddle" height="17" src="images/0505/image010.gif" width="15"/>轴的直线<img align="absmiddle" height="21" src="images/0505/image020.gif" width="43"/>，将曲边梯形分为<img align="absmiddle" height="15" src="images/0505/image016.gif" width="13"/>个窄曲边梯形．<br clear="none"/>
+<br clear="none"/>
+　　（2）　取部分量的近似值：在每个小区间上任取一点<img align="absmiddle" height="24" src="images/0505/image021.gif" width="83"/>，作以<img align="absmiddle" height="24" src="images/0505/image022.gif" width="40"/>为高，<img align="absmiddle" height="21" src="images/0505/image018.gif" width="57"/>为底的窄矩形，窄矩形的面积为<img align="absmiddle" height="24" src="images/0505/image022.gif" width="40"/>
+<img align="absmiddle" height="21" src="images/0505/image023.gif" width="25"/>，则第<img align="absmiddle" height="16" src="images/0505/image024.gif" width="12"/>个小曲边梯形的面积<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="24" src="images/0505/image025.gif" width="108"/> <img align="absmiddle" height="20" src="images/0505/image026.gif" width="91"/>
+<center>
+<img align="absmiddle" height="195" src="images/0505/image027.gif" width="360"/>
+</center>
+　　（3）　求和得总量的近似值：将<img align="absmiddle" height="15" src="images/0505/image016.gif" width="13"/>个小曲边梯形面积的近似值相加得曲边梯形面积的近似值<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="45" src="images/0505/image028.gif" width="171"/>   <img align="absmiddle" height="20" src="images/0505/image026.gif" width="91"/>
+<br clear="none"/>
+　　（4）　取极限（无限分细）得总量的精确值：设<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="24" src="images/0505/image029.gif" width="179"/> （小区间长度的最大值），则<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="45" src="images/0505/image030.gif" width="137"/>
+<br clear="none"/>
+　　这是一个特殊的和式的极限．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　定义：定积分就是上述类型的和式的极限，记为<img align="absmiddle" height="35" src="images/0505/image031.gif" width="65"/>，即
+<center>
+<img align="absmiddle" height="45" src="images/0505/image032.gif" width="185"/>
+</center>
+　　其中<img align="absmiddle" height="21" src="images/0505/image033.gif" width="37"/>叫做被积函数，<img align="absmiddle" height="23" src="images/0505/image034.gif" width="51"/>叫做被积表达式，<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>叫做积分变量，<img align="absmiddle" height="15" src="images/0505/image035.gif" width="13"/>叫做积分下限，<img align="absmiddle" height="19" src="images/0505/image036.gif" width="13"/>叫做积分上限，<img align="absmiddle" height="21" src="images/0505/image013.gif" width="36"/>叫做积分区间．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　根据定义，引例中的曲边梯形的面积
+<center>
+<img align="absmiddle" height="35" src="images/0505/image037.gif" width="93"/>
+</center>
+　　<b>其中曲边梯形是由曲线</b>
+<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>
+<b>和直线</b>
+<b>
+<img align="absmiddle" src="images/0505/image006.gif"/>
+</b>
+<b>以及</b>
+<b>
+<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>
+</b>
+<b>轴</b>
+<b>所围成的．</b>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、定积分的几何意义</h2>
+<br clear="none"/>
+　　（1）　当<img align="absmiddle" height="21" src="images/0505/image038.gif" width="60"/>时，曲边梯形在<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴的上方（如图所示），定积分<img align="absmiddle" height="35" src="images/0505/image039.gif" width="65"/>表示曲边梯形的面积，即　<img align="absmiddle" height="35" src="images/0505/image040.gif" width="93"/>．
+<center>
+<img align="absmiddle" height="176" src="images/0505/image041.gif" width="219"/>
+</center>
+　　（2）　当<img align="absmiddle" height="21" src="images/0505/image042.gif" width="61"/>时，曲边梯形在<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴的下方（如图所示），定积分<img align="absmiddle" height="35" src="images/0505/image039.gif" width="65"/>表示曲边梯形的面积的负值，即<img align="absmiddle" height="35" src="images/0505/image043.gif" width="103"/>．
+<center>
+<img align="absmiddle" height="181" src="images/0505/image044.gif" width="204"/>
+</center>
+<br clear="none"/>
+　　（3）　当<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>在<img align="absmiddle" height="23" src="images/0505/image005.gif" width="35"/>上有正、有负时，则由<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>，直线<img align="absmiddle" src="images/0505/image006.gif"/>以及<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴所围的图形，部分位于<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴上方，部分位于<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴下方（如图所示）．<img align="absmiddle" height="35" src="images/0505/image045.gif" width="63"/>表示的是上、下图形面积的代数和：<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴上方图形的面积之和－<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴下方图形的面积之和．例如出现下图所示的情况时，则有<img align="absmiddle" height="35" src="images/0505/image045.gif" width="63"/>＝<img align="absmiddle" height="19" src="images/0505/image046.gif" width="68"/>．
+<center>
+<img align="absmiddle" height="139" src="images/0505/image047.gif" width="229"/>
+</center>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>课堂练习：</b>根据定积分的几何意义，试求<br clear="none"/>
+　　（1） 定积分<img align="absmiddle" height="35" src="images/0505/image048.gif" width="45"/>；<br clear="none"/>
+　　提示：<img align="absmiddle" height="35" src="images/0505/image048.gif" width="45"/>在几何上表示由直线<img align="absmiddle" src="images/0505/image049.gif"/>以及<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴所围图形面积的代数和．请画出图形，再根据图形分析．<br clear="none"/>
+　　（2） <img align="absmiddle" height="35" src="images/0505/image052.gif" width="89"/>，并分析<img align="absmiddle" height="35" src="images/0505/image052.gif" width="89"/>和<img align="absmiddle" height="35" src="images/0505/image053.gif" width="87"/>之间的关系．<br clear="none"/>
+　　提示：<img align="absmiddle" height="35" src="images/0505/image052.gif" width="89"/>在几何上表示曲线<img align="absmiddle" height="28" src="images/0505/image054.gif" width="80"/>，直线<img align="absmiddle" height="19" src="images/0505/image050.gif" width="45"/> ，<img align="absmiddle" height="19" src="images/0505/image051.gif" width="35"/>以及<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴所围图形面积的代数和．请画出图形，再根据图形分析．<br clear="none"/>
+　　<a act="sh" class="daan" elm="01" href="####" shape="rect">      </a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="01" width="78%">
+<tr>
+<td colspan="1" rowspan="1">　　<strong>解：<br clear="none"/>
+　　</strong>（1）<img align="absmiddle" height="35" src="images/0505/image048.gif" width="45"/>在几何上表示直线<img align="absmiddle" src="images/0505/image049.gif"/>以及<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴所围图形面积的代数和．由于<img align="absmiddle" src="images/0505/image049.gif"/>是奇函数，其图形对称于原点，所以所围图形如下图所示，在<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴上方的三角形面积与在<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴下方的三角形面积完全一致，从而
+<center>
+<img align="absmiddle" height="35" src="images/0505/image055.gif" width="136"/>．<br clear="none"/>
+<img align="absmiddle" height="196" src="images/0505/image056.gif" width="243"/>
+</center>
+　　（2）<img align="absmiddle" height="35" src="images/0505/image052.gif" width="89"/>在几何上表示曲线<img align="absmiddle" height="28" src="images/0505/image054.gif" width="80"/>，直线<img align="absmiddle" height="19" src="images/0505/image478.gif" width="45"/>，<img align="absmiddle" height="19" src="images/0505/image051.gif" width="35"/>以及<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴所围图形面积的代数和．
+<center>
+<img align="absmiddle" height="195" src="images/0505/image057.gif" width="251"/>
+</center>
+　　因为<img align="absmiddle" height="28" src="images/0505/image054.gif" width="80"/>是单位圆<img align="absmiddle" height="24" src="images/0505/image058.gif" width="76"/>在<img align="absmiddle" height="15" src="images/0505/image009.gif" width="13"/>轴上方的部分，所以，<img align="absmiddle" height="41" src="images/0505/image059.gif" width="189"/>；又由对称性，<img align="absmiddle" height="35" src="images/0505/image060.gif" width="196"/>．<br clear="none"/>
+<b>　　</b>
+<strong>可以证明：</strong>在对称区间<img align="absmiddle" height="23" src="images/0505/image061.gif" width="48"/>上，若<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>是奇函数，则<img align="absmiddle" height="35" src="images/0505/image062.gif" width="92"/>，若<img align="absmiddle" height="23" src="images/0505/image011.gif" width="35"/>是偶函数，则<img align="absmiddle" height="35" src="images/0505/image063.gif" width="241"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
+

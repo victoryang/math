@@ -1,0 +1,540 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>5.4 微分方程初步</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>5.4 微分方程初步</h1></center>
+<div  class="page-part" code="part1_2" id="part1_2">
+<table  border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>前言</h2>
+　　英国数学家、哲学家怀特（White）曾经指出：“数学是一门理性思维的科学．它是研究、了解和知晓现实世界的工具”．微分方程就显示了数学的这种价值和魅力．</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、微分方程的基本概念<br clear="none"/>
+</h2>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>概念1：</strong>含有未知函数的导数或微分的方程称为微分方程，其中未知函数是一元函数的微分方程为常微分方程，微分方程中出现的未知函数的最高阶导数的阶数称为微分方程的阶．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例5.4.1</strong>　指出下列各微分方程的阶<br clear="none"/>
+　　（1）　<img align="absmiddle" height="21" src="images/0504/image001.gif" width="51"/>
+<br clear="none"/>
+　　（2）　<img align="absmiddle" height="44" src="images/0504/image002.gif" width="68"/>
+<br clear="none"/>
+　　（3）　<img align="absmiddle" height="44" src="images/0504/image003.gif" width="52"/>
+<br clear="none"/>
+　　（4）　<img align="absmiddle" height="24" src="images/0504/image004.gif" width="104"/>
+<br clear="none"/>
+　　<strong>解</strong>
+<br clear="none"/>
+　　（1）　在微分方程中，仅出现了未知函数<img align="absmiddle" height="23" src="images/0504/image005.gif" width="59"/>的一阶导数<img align="absmiddle" height="21" src="images/0504/image006.gif" width="19"/>，故是一阶微分方程．<br clear="none"/>
+　　（2）　在微分方程中，仅出现了未知函数<img align="absmiddle" height="23" src="images/0504/image007.gif" width="51"/>的二阶导数<img align="absmiddle" height="44" src="images/0504/image008.gif" width="32"/>，故是二阶微分方程．<br clear="none"/>
+　　（3）　在微分方程中，仅出现了未知函数<img align="absmiddle" height="23" src="images/0504/image005.gif" width="59"/>的一阶导数<img align="absmiddle" height="41" src="images/0504/image009.gif" width="24"/>，故是一阶微分方程．<br clear="none"/>
+　　（4）　在微分方程中，出现了未知函数<img align="absmiddle" height="23" src="images/0504/image005.gif" width="59"/>的三阶导数<img align="absmiddle" height="24" src="images/0504/image010.gif" width="24"/>和二阶导数<img align="absmiddle" height="24" src="images/0504/image011.gif" width="19"/>，最高阶导数的阶数是3，故是三阶微分方程．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>概念2：</strong>使微分方程成为恒等式的函数称为微分方程的解．如果微分方程的解中相互独立的任意常数的个数与方程的阶数相同，这种解称为方程的通解．不含任意常数的解称为特解．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　例如，函数<img align="absmiddle" height="24" src="images/0504/image012.gif" width="75"/>和<img align="absmiddle" height="24" src="images/0504/image013.gif" width="69"/>都满足一阶微分方程<img align="absmiddle" height="21" src="images/0504/image001.gif" width="51"/>，所以都是方程的解．其中<img align="absmiddle" height="24" src="images/0504/image013.gif" width="69"/>不含任意常数，所以是方程的特解，而<img align="absmiddle" height="24" src="images/0504/image012.gif" width="75"/>所含任意常数的个数与方程的阶数相等，所以是方程的通解．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>课堂练习1</b>
+<br clear="none"/>
+　　（1）　验算<img align="absmiddle" height="24" src="images/0504/image014.gif" width="57"/>是否是一阶微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>的解，如果是解，说明是通解还是特解．<br clear="none"/>
+　　（2）　验算<img align="absmiddle" height="24" src="images/0504/image016.gif" width="51"/>是否是微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>的解，如果是解，说明是通解还是特解．<br clear="none"/>
+　　<a act="sh" class="daan" elm="01" href="####" shape="rect">      </a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="01" width="78%">
+<tr>
+<td colspan="1" rowspan="1">
+<strong>解：</strong>　<br clear="none"/>
+　　（1）　<img align="absmiddle" height="24" src="images/0504/image014.gif" width="57"/>，<img align="absmiddle" height="24" src="images/0504/image017.gif" width="69"/>，因为<img align="absmiddle" height="21" src="images/0504/image018.gif" width="51"/>＝<img align="absmiddle" height="21" src="images/0504/image019.gif" width="116"/>，这说明函数<img align="absmiddle" height="24" src="images/0504/image014.gif" width="57"/>能使微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>成立，所以是微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>的解．又因为该解中有一个独立的任意常数C，所以是通解．<br clear="none"/>
+　　（2）　<img align="absmiddle" height="24" src="images/0504/image016.gif" width="51"/>，<img align="absmiddle" height="24" src="images/0504/image020.gif" width="64"/>，因为<img align="absmiddle" height="21" src="images/0504/image021.gif" width="64"/>
+<img align="absmiddle" height="21" src="images/0504/image022.gif" width="36"/>－2<img align="absmiddle" height="21" src="images/0504/image023.gif" width="24"/>=－3<img align="absmiddle" height="21" src="images/0504/image023.gif" width="24"/>
+<img align="absmiddle" height="19" src="images/0504/image024.gif" width="25"/>，这说明函数<img align="absmiddle" height="24" src="images/0504/image016.gif" width="51"/>不满足微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>，所以不是微分方程<img align="absmiddle" height="21" src="images/0504/image015.gif" width="75"/>的解．</td>
+</tr>
+</table>
+<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_1" id="part3_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_05_02" class="part3_1">
+<h2>二、两种常见的一阶微分方程及其解法</h2>
+<b>1、可分离变量的一阶微分方程</b>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>如果一阶微分方程能转化为如下的形式
+<center>
+<img align="absmiddle" height="23" src="images/0504/image025.gif" width="111"/>，</center>
+　　则称此微分方程是可分离变量的微分方程．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+　　<strong>求解方法</strong>　首先分离变量，然后两端求积分，即可求得方程的隐函数形式的解．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_2" id="part3_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例5.4.2</strong>　求微分方程<img align="absmiddle" height="44" src="images/0504/image026.gif" width="79"/>的通解． <br clear="none"/>
+　　<strong>解</strong>　分离变量得：<img align="absmiddle" height="21" src="images/0504/image027.gif" width="68"/>，（原方程两边同时乘以<img align="absmiddle" height="17" src="images/0504/image028.gif" width="15"/>和<img align="absmiddle" height="19" src="images/0504/image029.gif" width="20"/>）<br clear="none"/>
+　　两边积分：　<img align="absmiddle" height="29" src="images/0504/image030.gif" width="88"/>，求得<br clear="none"/>
+　　　　　　　　<img align="absmiddle" height="44" src="images/0504/image031.gif" width="91"/>，<br clear="none"/>
+　　于是通解为<br clear="none"/>
+　　　　　　　　<img align="absmiddle" height="24" src="images/0504/image032.gif" width="81"/>，<img align="absmiddle" height="19" src="images/0504/image033.gif" width="16"/>为任意常数．<br clear="none"/>
+　　这就是方程的隐函数形式的解．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_3" id="part3_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.4.3</strong>　求微分方程<img align="absmiddle" height="41" src="images/0504/image034.gif" width="95"/>的通解．<br clear="none"/>
+　　<strong>解</strong>　分离变量得：<img align="absmiddle" height="45" src="images/0504/image035.gif" width="71"/>，（原方程两边同时乘以<img align="absmiddle" height="19" src="images/0504/image029.gif" width="20"/>，除以<img align="absmiddle" height="17" src="images/0504/image028.gif" width="15"/>，此时需要<img align="absmiddle" height="21" src="images/0504/image036.gif" width="39"/>）<br clear="none"/>
+　　两边积分：　<img align="absmiddle" height="44" src="images/0504/image037.gif" width="91"/>，求得<br clear="none"/>
+　　　　　　　　　　　　　　　　　　　　　<img align="absmiddle" height="27" src="images/0504/image038.gif" width="95"/>，<br clear="none"/>
+　　于是　　　　<img align="absmiddle" height="32" src="images/0504/image039.gif" width="141"/>，即<img align="absmiddle" height="31" src="images/0504/image040.gif" width="87"/>，<br clear="none"/>
+　　记<img align="absmiddle" height="25" src="images/0504/image041.gif" width="71"/>，则有<img align="absmiddle" height="27" src="images/0504/image042.gif" width="59"/>，因为<img align="absmiddle" height="21" src="images/0504/image043.gif" width="37"/>也是解，所以这里的<img align="absmiddle" height="19" src="images/0504/image033.gif" width="16"/>可为任意常数．故方程的通解为<br clear="none"/>
+　　　　　　　　　　　　　　　　　　　　　　　<img align="absmiddle" height="26" src="images/0504/image044.gif" width="59"/>，<br clear="none"/>
+　　<img align="absmiddle" height="19" src="images/0504/image033.gif" width="16"/>可为任意常数．<br clear="none"/>
+　　<img src="images/zhu.gif"/>通常情况下，我们在积分时可以约定采用一种简单的书写方式，这样就不必进行繁琐的讨论，也会得到同样的结果．<br clear="none"/>
+
+　　将刚才这道题重新书写如下：<br clear="none"/>
+　　分离变量得：　<img align="absmiddle" height="45" src="images/0504/image035.gif" width="71"/>，<br clear="none"/>
+　　两边积分：　<img align="absmiddle" height="44" src="images/0504/image037.gif" width="91"/>，　求得<br clear="none"/>
+　　　　　　　　　　　　　　　　　　　　　<img align="absmiddle" height="24" src="images/0504/image045.gif" width="104"/>，<br clear="none"/>
+　　于是　　　　　　　　　　　　　<img align="absmiddle" height="29" src="images/0504/image046.gif" width="192"/>．<br clear="none"/>
+　　故所求通解为：<img align="absmiddle" height="29" src="images/0504/image047.gif" width="63"/>，<img align="absmiddle" height="19" src="images/0504/image033.gif" width="16"/>为任意常数．<br clear="none"/>
+　　（<img src="images/zhu.gif"/>：本题用到公式<img align="absmiddle" height="21" src="images/0504/image048.gif" width="95"/>）<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_4" id="part3_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.4.4</strong>　求微分方程<img align="absmiddle" height="24" src="images/0504/image049.gif" width="136"/>的通解．<br clear="none"/>
+　　<strong>解</strong>　移项得：<img align="absmiddle" height="24" src="images/0504/image050.gif" width="123"/>，<br clear="none"/>
+　　用<img align="absmiddle" height="24" src="images/0504/image051.gif" width="59"/>除方程两边，分离变量得：　<img align="absmiddle" height="44" src="images/0504/image052.gif" width="108"/>，<br clear="none"/>
+　　两边积分：　<img align="absmiddle" height="44" src="images/0504/image053.gif" width="125"/>，　求得<br clear="none"/>
+　　<img align="absmiddle" height="44" src="images/0504/image054.gif" width="225"/>＝<img align="absmiddle" height="41" src="images/0504/image055.gif" width="128"/>
+<br clear="none"/>
+　　　　＝<img align="absmiddle" height="33" src="images/0504/image056.gif" width="119"/>＝<img align="absmiddle" height="47" src="images/0504/image057.gif" width="112"/>＝<img align="absmiddle" height="47" src="images/0504/image058.gif" width="71"/>，<br clear="none"/>
+　　于是方程的通解为<br clear="none"/>
+　　<img align="absmiddle" height="47" src="images/0504/image059.gif" width="83"/>，<br clear="none"/>
+　　<img align="absmiddle" height="19" src="images/0504/image033.gif" width="16"/>为任意常数．<br clear="none"/>
+　　（本题用到公式<img align="absmiddle" height="23" src="images/0504/image060.gif" width="121"/>）<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_5" id="part3_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.4.5</strong>　求微分方程<img align="absmiddle" height="41" src="images/0504/image061.gif" width="63"/>满足条件<img align="absmiddle" height="29" src="images/0504/image062.gif" width="60"/>的特解．<br clear="none"/>
+　　<strong>解</strong>　分离变量得： <img align="absmiddle" height="44" src="images/0504/image063.gif" width="69"/>，（方程两边同乘以<img align="absmiddle" height="19" src="images/0504/image029.gif" width="20"/>，除以<img align="absmiddle" height="17" src="images/0504/image028.gif" width="15"/>）<br clear="none"/>
+　　两边积分：　<img align="absmiddle" height="44" src="images/0504/image064.gif" width="87"/>，　求得<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image065.gif" width="167"/>，<br clear="none"/>
+　　于是方程的通解为<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image066.gif" width="45"/>，<br clear="none"/>
+　　将条件<img align="absmiddle" height="29" src="images/0504/image067.gif" width="61"/>代入，得<img align="absmiddle" height="19" src="images/0504/image068.gif" width="39"/>，从而所求的特解为<br clear="none"/>
+　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image069.gif" width="43"/>．<br clear="none"/>
+　　（<img src="images/zhu.gif"/>：本题用到公式<img align="absmiddle" height="41" src="images/0504/image070.gif" width="108"/>）<br clear="none"/>
+　　从通解中确定出特解的条件称为初始条件（初值条件）．例5.4.5中的条件<img align="absmiddle" height="29" src="images/0504/image067.gif" width="61"/>就是初始条件．<br clear="none"/>
+　　求解微分方程满足初始条件的特解的问题称为微分方程的初值问题．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_6" id="part3_6">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1" id="know_j_05_03" class="part3_6">
+<br clear="none"/>
+　　<b>2、一阶线性微分方程</b>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　<strong>定义：</strong>形式是
+<center>
+<img align="absmiddle" height="41" src="images/0504/image071.gif" width="125"/>
+</center>
+　　的微分方程称为一阶线性微分方程．其特点是未知函数及其导数都是一次的．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<strong>求解方法</strong>　可采用下列公式求通解．<br clear="none"/>
+　　　　　　　<img align="absmiddle" height="39" src="images/0504/image072.gif" width="231"/>
+<br clear="none"/>
+　　<strong>说明：<br clear="none"/>
+</strong>
+　　（1）　推导通解公式时已将任意常数单独写出，所以公式中的两处不定积分计算出来后无需再写任意常数．<br clear="none"/>
+　　（2）　如果方程中的<img align="absmiddle" height="23" src="images/0504/image073.gif" width="59"/>，则称方程是一阶线性齐次微分方程；否则称为一阶线性非齐次微分方程．当方程为齐次时，<img align="absmiddle" height="41" src="images/0504/image074.gif" width="101"/>既可通过上述公式求解，由于可以分离变量成为<img align="absmiddle" height="44" src="images/0504/image075.gif" width="94"/>的形式，所以也可以通过分离变量的方法求解．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_7" id="part3_7">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　一阶线性微分方程的标准形式是：<img align="absmiddle" height="44" src="images/0504/image076.gif" width="109"/>
+<br clear="none"/>
+　　其通解公式是：　<img align="absmiddle" height="39" src="images/0504/image072.gif" width="231"/>
+<br clear="none"/>
+<br clear="none"/>
+　　<strong>例5.4.6</strong>　求微分方程<img align="absmiddle" height="41" src="images/0504/image077.gif" width="92"/>的通解．<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="41" src="images/0504/image078.gif" width="61"/>，<img align="absmiddle" height="24" src="images/0504/image079.gif" width="65"/>，<br clear="none"/>
+　　方程的通解为<br clear="none"/>
+　　　<img align="absmiddle" height="21" src="images/0504/image080.gif" width="19"/>＝<img align="absmiddle" height="39" src="images/0504/image081.gif" width="206"/>
+<br clear="none"/>
+　　　　＝<img align="absmiddle" height="40" src="images/0504/image082.gif" width="50"/>
+<img align="absmiddle" height="57" src="images/0504/image083.gif" width="125"/>
+<br clear="none"/>
+　　　　＝<img align="absmiddle" height="28" src="images/0504/image084.gif" width="50"/>
+<img align="absmiddle" height="33" src="images/0504/image085.gif" width="121"/>　　<br clear="none"/>
+　　　　＝<img align="absmiddle" height="45" src="images/0504/image086.gif" width="108"/>　   <br clear="none"/>
+        =<img align="absmiddle" height="49" src="images/0504/image087.gif" width="102"/>
+<br clear="none"/>
+　　（<img src="images/zhu.gif"/>：由<img align="absmiddle" height="28" src="images/0504/image088.gif" width="131"/>，得<img align="absmiddle" height="49" src="images/0504/image089.gif" width="195"/>，<img align="absmiddle" height="28" src="images/0504/image090.gif" width="126"/>）<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_8" id="part3_8">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.4.7</strong>　求微分方程<img align="absmiddle" height="41" src="images/0504/image091.gif" width="135"/>满足条件<img align="absmiddle" height="27" src="images/0504/image092.gif" width="57"/>的特解．<br clear="none"/>
+　　<strong>解</strong>　原方程变形为一阶线性微分方程的标准形式<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image093.gif" width="135"/>
+<br clear="none"/>
+　　　　　　　　　　　　<img align="absmiddle" height="23" src="images/0504/image094.gif" width="81"/>，<img align="absmiddle" height="23" src="images/0504/image095.gif" width="81"/>
+<br clear="none"/>
+　　方程的通解为<br clear="none"/>
+　　　　 <img align="absmiddle" height="21" src="images/0504/image080.gif" width="19"/>＝<img align="absmiddle" height="39" src="images/0504/image081.gif" width="206"/>
+<br clear="none"/>
+　　  　　　＝<img align="absmiddle" height="38" src="images/0504/image096.gif" width="68"/>
+<img align="absmiddle" height="49" src="images/0504/image097.gif" width="175"/>
+<br clear="none"/>
+　　　 　　 ＝<img align="absmiddle" height="28" src="images/0504/image098.gif" width="52"/>
+<img align="absmiddle" height="33" src="images/0504/image099.gif" width="162"/>　　<br clear="none"/>
+　　　　　　＝<img align="absmiddle" height="32" src="images/0504/image100.gif" width="143"/>　   <br clear="none"/>
+       　　＝<img align="absmiddle" height="24" src="images/0504/image101.gif" width="112"/>=<img align="absmiddle" height="21" src="images/0504/image102.gif" width="102"/>
+<br clear="none"/>
+　　将初始条件<img align="absmiddle" height="27" src="images/0504/image092.gif" width="57"/>代入，求得<img align="absmiddle" height="19" src="images/0504/image068.gif" width="39"/>，从而所求的特解为<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="21" src="images/0504/image103.gif" width="107"/>．<br clear="none"/>
+　　（<img src="images/zhu.gif"/>：<img align="absmiddle" height="51" src="images/0504/image104.gif" width="297"/>）<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_9" id="part3_9">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<b>课堂练习2</b>
+<br clear="none"/>
+　　（1）求微分方程<img align="absmiddle" height="24" src="images/0504/image105.gif" width="168"/>的通解．（提示：先变形为一阶线性微分方程的标准形式）<br clear="none"/>
+　　（2）对于例5.4.3给出的微分方程<img align="absmiddle" height="41" src="images/0504/image034.gif" width="95"/>，试将其变形为一阶线性微分方程的标准形式，再用公式法求解．<br clear="none"/>
+　　<a act="sh" class="daan" elm="02" href="####" shape="rect">      </a>
+<br clear="none"/>
+<table border="0" cellpadding="0" cellspacing="0" class="tab" id="02" width="78%">
+<tr>
+<td colspan="1" rowspan="1">　　<strong>解：</strong>
+<br clear="none"/>
+　　（1）注意到一阶线性微分方程的标准形式中，<img align="absmiddle" height="41" src="images/0504/image106.gif" width="55"/>的系数是1，所以可先将原方程两边除以<img align="absmiddle" height="19" src="images/0504/image029.gif" width="20"/>，再除以<img align="absmiddle" height="21" src="images/0504/image107.gif" width="19"/>，最后经过移项，原方程变形为<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image108.gif" width="107"/>，<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="41" src="images/0504/image078.gif" width="61"/>，<img align="absmiddle" height="41" src="images/0504/image109.gif" width="83"/>，<br clear="none"/>
+　　代入通解公式，得<br clear="none"/>
+　 　 <img align="absmiddle" height="21" src="images/0504/image080.gif" width="19"/>＝<img align="absmiddle" height="39" src="images/0504/image081.gif" width="206"/>
+<br clear="none"/>
+　　  　＝<img align="absmiddle" height="44" src="images/0504/image110.gif" width="53"/>
+<img align="absmiddle" height="61" src="images/0504/image111.gif" width="160"/>
+<br clear="none"/>
+　　　  ＝<img align="absmiddle" height="28" src="images/0504/image112.gif" width="49"/>
+<img align="absmiddle" height="51" src="images/0504/image113.gif" width="155"/>　　<br clear="none"/>
+　　　　＝<img align="absmiddle" height="49" src="images/0504/image114.gif" width="157"/>　   <br clear="none"/>
+        =<img align="absmiddle" height="45" src="images/0504/image115.gif" width="131"/>=<img align="absmiddle" height="49" src="images/0504/image116.gif" width="128"/>，<br clear="none"/>
+　　所求方程的通解为<br clear="none"/>
+　　　<img align="absmiddle" height="45" src="images/0504/image117.gif" width="109"/>．<br clear="none"/>
+　　（2）　例5.4.3给出的微分方程<img align="absmiddle" height="41" src="images/0504/image034.gif" width="95"/>是一个可分离变量的微分方程，如果将其改写为<img align="absmiddle" height="21" src="images/0504/image118.gif" width="81"/>，对照一阶线性齐次微分方程的标准形式<img align="absmiddle" height="41" src="images/0504/image119.gif" width="122"/>，可知它同时是<img align="absmiddle" height="23" src="images/0504/image073.gif" width="59"/>的一阶线性微分方程，即它是一阶线性齐次微分方程，且有<br clear="none"/>
+　　　　　　　　　　　　　　<img align="absmiddle" height="23" src="images/0504/image120.gif" width="76"/>，<img align="absmiddle" height="23" src="images/0504/image121.gif" width="59"/>，<br clear="none"/>
+　　运用公式，得方程的通解为<br clear="none"/>
+　　　<img align="absmiddle" height="21" src="images/0504/image080.gif" width="19"/>＝<img align="absmiddle" height="39" src="images/0504/image081.gif" width="206"/>
+<br clear="none"/>
+　　　　＝<img align="absmiddle" height="32" src="images/0504/image122.gif" width="56"/>
+<br clear="none"/>
+　　　　＝<img align="absmiddle" height="26" src="images/0504/image123.gif" width="35"/>
+<br clear="none"/>
+　　你做对了吗<img align="absmiddle" src="images/wenh.jpg"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="page-part" code="part3_10" id="part3_10">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例5.4.8</strong>　求微分方程<img align="absmiddle" height="44" src="images/0504/image124.gif" width="76"/>的通解．<br clear="none"/>
+　　<strong>解</strong>　将原方程改写为<img align="absmiddle" height="44" src="images/0504/image125.gif" width="76"/>，即<img align="absmiddle" height="44" src="images/0504/image126.gif" width="72"/>，<br clear="none"/>
+　　进一步变形为<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="44" src="images/0504/image127.gif" width="72"/>，<br clear="none"/>
+　　这是以<img align="absmiddle" height="17" src="images/0504/image028.gif" width="15"/>为自变量，以<img align="absmiddle" height="15" src="images/0504/image128.gif" width="13"/>为未知函数的一阶线性微分方程<img align="absmiddle" height="44" src="images/0504/image129.gif" width="124"/>，且<br clear="none"/>
+　　　　　　　　　　　<img align="absmiddle" height="44" src="images/0504/image130.gif" width="75"/>，　<img align="absmiddle" height="23" src="images/0504/image131.gif" width="57"/>，<br clear="none"/>
+　　由通解公式，得<br clear="none"/>
+　 　 <img align="absmiddle" height="18" src="images/0504/image132.gif" width="17"/>＝<img align="absmiddle" height="39" src="images/0504/image133.gif" width="206"/>
+<br clear="none"/>
+　　  　＝<img align="absmiddle" height="46" src="images/0504/image134.gif" width="48"/>
+<img align="absmiddle" height="64" src="images/0504/image135.gif" width="122"/>
+<br clear="none"/>
+　　　  ＝<img align="absmiddle" height="28" src="images/0504/image136.gif" width="38"/>
+<img align="absmiddle" height="33" src="images/0504/image137.gif" width="103"/>　　<br clear="none"/>
+　　　　＝<img align="absmiddle" height="52" src="images/0504/image138.gif" width="102"/>　   <br clear="none"/>
+        =<img align="absmiddle" height="25" src="images/0504/image139.gif" width="80"/>=<img align="absmiddle" height="23" src="images/0504/image140.gif" width="79"/>，<br clear="none"/>
+　　所求方程的通解为<br clear="none"/>
+　　　　　　　　　　　　<img align="absmiddle" height="23" src="images/0504/image141.gif" width="106"/>．<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td class="bzxj" colspan="1" rowspan="1">
+通过学习，我们需要掌握关于微分方程一些简单的基础知识，能判断微分方程的阶，知道什么是通解，什么是特解，什么是初始条件．会求一阶微分方程中的两种简单类型：可分离变量的微分方程；一阶线性微分方程．</td>
+</tr>
+</table>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="ques_05_02" class="popup-questions" knowid="know_j_05_02" syncpart="part3_1">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="a" score="100">
+<p>18．初值问题<img src="images/0504/image636.gif" alt="" width="88" height="44" align="absmiddle">的隐式特解为（　　　）</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0504/image637.gif" alt="" width="80" height="24" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0504/image638.gif" alt="" width="75" height="24" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0504/image639.gif" alt="" width="68" height="24" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0504/image640.gif" alt="" width="71" height="24" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】A</p>
+<p>【解析】<img src="images/0504/image641.gif" alt="" width="196" height="249" align="texttop"></p>
+<p>【知识点】<strong>可分离变量的一阶微分方程</strong></p>
+</div>
+</div>
+</div>
+
+<div id="ques_05_03" class="popup-questions" knowid="know_j_05_03" syncpart="part3_6">
+<p class="popup-questions-title">请认真答题，测试一下你对前面知识点的学习情况！</p>
+<div class="question" code="1" type="single_choice" answer="b" score="100">
+<p>19．微分方程<img src="images/0504/image642.gif" width="115" height="24" align="absmiddle">满足初始条件<img src="images/0504/image643.gif" width="51" height="20" align="absmiddle">的特解是（    ）.</p>
+<ul class="options">
+     <li code="a">A.<img src="images/0504/image644.gif" alt="" width="37" height="21" align="absmiddle"></li>
+	 <li code="b">B.<img src="images/0504/image645.gif" alt="" width="44" height="21" align="absmiddle"></li>
+	 <li code="c">C.<img src="images/0504/image646.gif" alt="" width="45" height="21" align="absmiddle"></li>
+	 <li code="d">D.<img src="images/0504/image648.gif" alt="" width="47" height="21" align="absmiddle"></li>
+</ul>
+<div class="answer">
+<p>【答案】B</p>
+<p>【解析】<img src="images/0504/ch0504_clip_image002.jpg" alt="" width="235" height="119" align="texttop"></p>
+<p>【知识点】<strong>一阶线性微分方程</strong></p>
+</div>
+</div>
+</div>
+
+</div>
+</body>
+</html>
+

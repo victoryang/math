@@ -1,0 +1,302 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>6.3 矩阵的概念及矩阵的初等行变换</title>
+<link href="__templates/htmlv1/styles/content.css" rel="stylesheet" type="text/css"/>
+<link href="__templates/htmlv1/styles/old_wmv.css" rel="stylesheet" type="text/css"/>
+<script src="__templates/htmlv1/scripts/jquery.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/old_wmv.js" type="text/javascript" xml:space="preserve"> </script>
+<script src="__templates/htmlv1/scripts/framework_client.js" type="text/javascript" xml:space="preserve"> </script></head>
+<body>
+<div id="container">
+<center><h1>6.3 矩阵的概念及矩阵的初等行变换</h1></center>
+<div class="page-part" code="part1_2" id="part1_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>一、矩阵的概念</h2>
+<br clear="none"/>
+　　现实生活中我们常常会看到用表格来描述事物．例如，某厂向三个商店发送四种产品的数量可列成下面这样的表格．
+<center>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" height="170" width="290">
+<param name="movie" value="flash/61006.swf" valuetype="data"/>
+<param name="quality" value="high" valuetype="data"/>
+<param name="wmode" value="Opaque" valuetype="data"/>
+<embed height="170" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" wmode="Opaque" src="flash/61006.swf" type="application/x-shockwave-flash" width="290"/>
+</object>
+</center>
+<br clear="none"/>
+　　其中<img align="absmiddle" height="25" src="images/0603/image002.gif" width="24"/>为工厂向第i个店发送第j 种产品的数量．<br clear="none"/>
+　　这是一个3行4列的数表．<br clear="none"/>
+　　又如，三元线性方程组
+<center>
+<img align="absmiddle" height="75" src="images/0603/image003.gif" width="180"/>，</center>
+　　其系数和常数项按照顺序可以排成一个3行4列的数表：
+<center>
+<img align="absmiddle" height="75" src="images/0603/image004.gif" width="141"/>
+</center>
+　　由此，线性方程组可以很方便地用对应的数表抽象地表示，反之，数表也可以对应表示线性方程组．例如，数表
+<center>
+<img align="absmiddle" height="75" src="images/0603/image005.gif" width="108"/>
+</center>
+　　对应表示的线性方程组是
+<center>
+<img align="absmiddle" height="75" src="images/0603/image006.gif" width="124"/>，</center>
+　　这就是说，线性方程组可以和数表一一对应．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="page-part" code="part1_3" id="part1_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+ <b>   1、矩阵的定义</b>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">　　由<img align="absmiddle" height="15" src="images/0603/image007.gif" width="39"/>个数<img align="absmiddle" height="25" src="images/0603/image008.gif" width="19"/>（<img align="absmiddle" height="21" src="images/0603/image009.gif" width="164"/>）排成的<img align="absmiddle" height="15" src="images/0603/image010.gif" width="17"/>行<img align="absmiddle" height="15" src="images/0603/image011.gif" width="13"/>列的矩形数表
+<center>
+<img align="absmiddle" height="17" src="images/0603/image012.gif" width="29"/>
+<img align="absmiddle" height="123" src="images/0603/image013.gif" width="140"/>
+</center>
+　　称为<img align="absmiddle" height="15" src="images/0603/image010.gif" width="17"/>行<img align="absmiddle" height="15" src="images/0603/image011.gif" width="13"/>列的矩阵，简称<img align="absmiddle" height="15" src="images/0603/image014.gif" width="39"/>矩阵．这<img align="absmiddle" height="15" src="images/0603/image014.gif" width="39"/>个数叫做矩阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>的元素，<img align="absmiddle" height="25" src="images/0603/image008.gif" width="19"/>叫做矩阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>的第<img align="absmiddle" height="17" src="images/0603/image016.gif" width="9"/>行<img align="absmiddle" height="20" src="images/0603/image017.gif" width="13"/>列的元素，第一个下标<img align="absmiddle" height="17" src="images/0603/image016.gif" width="9"/>表示元素所在的行，第二下标<img align="absmiddle" height="20" src="images/0603/image017.gif" width="13"/>表示元素所在的列．矩阵也可以记为：<img align="absmiddle" height="25" src="images/0603/image018.gif" width="57"/>，或<img align="absmiddle" height="27" src="images/0603/image019.gif" width="79"/>或<img align="absmiddle" height="24" src="images/0603/image020.gif" width="35"/>．<br clear="none"/>
+　　两个矩阵的行数与列数均相等，就称它们是同型矩阵．如果两个矩阵Ａ和Ｂ是同型矩阵且对应元素相等，则称矩阵Ａ与矩阵Ｂ相等．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　<strong>说明：</strong>
+<br clear="none"/>
+　　1. 矩阵和行列式不是一个概念，行列式是方的，运算结果是一个数，而矩阵只是个数表，且行数和列数可以不一致．<br clear="none"/>
+　　2. 对于线性方程组，由其系数和常数项构成的可用于抽象地表示该方程组的矩阵称为该方程组的增广矩阵．<br clear="none"/>
+　　例如，二元线性方程组<img align="absmiddle" height="51" src="images/0603/image021.gif" width="92"/>的增广矩阵为<img align="absmiddle" height="48" src="images/0603/image022.gif" width="80"/>，三元线性方程组<img align="absmiddle" height="75" src="images/0603/image006.gif" width="124"/>的增广矩阵为
+<center>
+<img align="absmiddle" height="75" src="images/0603/image005.gif" width="108"/>．</center>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="page-part" code="part1_4" id="part1_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<b>　　2、</b>
+<b>几种特殊的矩阵</b>
+<br clear="none"/>
+　　(1)<strong>方阵</strong>：当矩阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>的行数与列数相等均为<img align="absmiddle" height="15" src="images/0603/image011.gif" width="13"/>时，<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>称为<img align="absmiddle" height="15" src="images/0603/image011.gif" width="13"/>阶方阵．由方阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>的元素所构成的行列式（各元素的位置不变）称为方阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>的行列式，记作<img align="absmiddle" height="27" src="images/0603/image023.gif" width="20"/>或<img align="absmiddle" height="19" src="images/0603/image024.gif" width="37"/>．<br clear="none"/>
+　　例如，三阶方阵<img align="absmiddle" height="91" src="images/0603/image025.gif" width="135"/>的行列式是<img align="absmiddle" height="91" src="images/0603/image026.gif" width="129"/>．<br clear="none"/>
+　　(2)<strong>行矩阵和列矩阵</strong>：只有一行的矩阵称为行矩阵；只有一列的矩阵称为列矩阵．<br clear="none"/>
+　　(3)<strong>零矩阵</strong>：所有元素都为0的矩阵称为零矩阵．<br clear="none"/>
+    问：下列两个矩阵相等吗？
+<center>
+<img align="absmiddle" height="56" src="images/0603/image027.gif" width="75"/>，<img align="absmiddle" height="56" src="images/0603/image028.gif" width="95"/>
+</center>
+　　矩阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>与矩阵<img align="absmiddle" height="17" src="images/0603/image029.gif" width="16"/>都是零矩阵，但不是同型的，所以<img align="absmiddle" height="17" src="images/0603/image030.gif" width="44"/>．<br clear="none"/>
+　　(4)上三角矩阵、下三角矩阵、对角阵与单位阵<br clear="none"/>
+　　主对角线上的元素称为主对角线元素．<br clear="none"/>
+　　如果方阵主对角线的下方元素全为零，称之为上三角矩阵．<br clear="none"/>
+　　如果方阵主对角线的上方元素全为零，称之为下三角矩阵．<br clear="none"/>
+　　如果方阵除对角线以外，所有元素全为零，称之为对角阵，可用记号dig表示．<br clear="none"/>
+　　如果方阵主对角线元素全为1，而其余元素全为零，则称之为单位阵，记为<img align="absmiddle" height="17" src="images/0603/image031.gif" width="16"/>．<br clear="none"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_1" id="part2_1">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<h2>二、矩阵的初等行变换</h2>
+<br clear="none"/>
+　　<b>1、</b>
+<b>矩阵初等行变换的定义</b>
+<br clear="none"/>
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%">
+<tr>
+<td colspan="1" height="18" rowspan="1" width="39">
+<img height="18" src="images/tab/tab1.jpg" width="39"/>
+</td>
+<td background="images/tab/tab2.jpg" colspan="1" height="18" rowspan="1"/>
+<td colspan="1" height="18" rowspan="1" width="23">
+<img height="18" src="images/tab/tab4.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td background="images/tab/tab6.jpg" colspan="1" rowspan="1" valign="top" width="39">
+<img height="119" src="images/tab/tab4-2.jpg" width="39"/>
+</td>
+<td background="images/tab/tabbg.jpg" colspan="1" rowspan="1">
+　　<strong>定义：</strong>下述三种变换统称为矩阵的初等行变换．<br clear="none"/>
+　　(1)换法变换：对换矩阵的两行．对换 <img align="absmiddle" height="20" src="images/0603/image032.gif" width="24"/>两行，记作<img align="absmiddle" height="25" src="images/0603/image033.gif" width="48"/>．<br clear="none"/>
+　　(2)倍法变换：用非零数乘矩阵某一行的每个元素．第<img align="absmiddle" height="17" src="images/0603/image016.gif" width="9"/>行乘<img align="absmiddle" height="19" src="images/0603/image034.gif" width="13"/>，记作<img align="absmiddle" height="24" src="images/0603/image035.gif" width="35"/>．<br clear="none"/>
+　　(3)消法变换：用数乘矩阵某一行的每个元素后加到另一行的对应元素上．第<img align="absmiddle" height="20" src="images/0603/image017.gif" width="13"/>行的<img align="absmiddle" height="19" src="images/0603/image034.gif" width="13"/>倍加到第<img align="absmiddle" height="17" src="images/0603/image016.gif" width="9"/>行上，记作<img align="absmiddle" height="25" src="images/0603/image036.gif" width="45"/>．</td>
+<td background="images/tab/tab7.jpg" colspan="1" rowspan="1" valign="top" width="23">
+<img height="119" src="images/tab/tab5.jpg" width="23"/>
+</td>
+</tr>
+<tr>
+<td colspan="1" height="22" rowspan="1" width="39">
+<img height="22" src="images/tab/tab8.jpg" width="39"/>
+</td>
+<td align="left" background="images/tab/tab10.jpg" colspan="1" height="22" rowspan="1">
+<img height="22" src="images/tab/tab9.jpg" width="292"/>
+</td>
+<td colspan="1" height="22" rowspan="1" width="23">
+<img height="22" src="images/tab/tab11.jpg" width="23"/>
+</td>
+</tr>
+</table>
+<br clear="none"/>
+　　当矩阵<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>经过初等行变换变成矩阵<img align="absmiddle" height="17" src="images/0603/image029.gif" width="16"/>时，可记为<img align="absmiddle" height="17" src="images/0603/image015.gif" width="16"/>-&gt;<img align="absmiddle" height="17" src="images/0603/image029.gif" width="16"/>．<br clear="none"/>
+　　注意：矩阵的初等行变换在表述形式上与行列式相应的运算类似，但从本质上说，两者是完全不同的．<br clear="none"/>
+　　例如：对矩阵<img align="absmiddle" height="48" src="images/0603/image037.gif" width="77"/>，作运算<img align="absmiddle" height="24" src="images/0603/image038.gif" width="47"/>，得到一个和原矩阵不同的新矩阵<img align="absmiddle" height="48" src="images/0603/image039.gif" width="48"/>；对行列式<img align="absmiddle" height="48" src="images/0603/image040.gif" width="72"/>，作运算<img align="absmiddle" height="24" src="images/0603/image038.gif" width="47"/>，行列式的值不变，即<img align="absmiddle" height="48" src="images/0603/image041.gif" width="153"/>．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="page-part" code="part2_2" id="part2_2">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<b>　　2、</b>
+<b>行阶梯形矩阵和行最简矩阵</b>
+<br clear="none"/>
+　　(<b>1)</b>
+<b>行阶梯形矩阵</b>
+<center>
+<img align="absmiddle" height="100" src="images/0603/image042.gif" width="189"/>
+</center>
+　　特点：从第一行开始从左至右划线，遇下一行第一个非零元则下一个台阶，由此逐行向下，可划出一条阶梯线，线的下方元素全为零，每个台阶只有一行．<br clear="none"/>
+
+　　<b>(2)</b>
+<b>行最简矩阵</b>
+<center>
+<img align="absmiddle" height="108" src="images/0603/image043.gif" width="188"/>
+</center>
+　　<strong>特点</strong>：是行阶梯形矩阵，且非零行的第一个非零元为1，这些非零元所在的列的其它元素为0．<br clear="none"/>
+　　可以证明：任何一个矩阵均可以通过初等行变换变成一个行阶梯形矩阵，并进一步变成行最简矩阵．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+<div class="page-part" code="part2_3" id="part2_3">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<span class="Title2">典型例题</span>
+<br clear="none"/>
+　　<strong>例6.3.1</strong>　利用初等行变换将矩阵<img align="absmiddle" height="75" src="images/0603/image044.gif" width="88"/>化为行最简矩阵．　<a act="click_open" elm="pa060301.html" href="####" shape="rect" wh="300,210">提示&gt;&gt;</a>
+<br clear="none"/>
+    <strong>解</strong>　<img align="absmiddle" height="75" src="images/0603/image045.gif" width="383"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　　 <img align="absmiddle" height="70" src="images/0603/image048.gif" width="285"/>                <br clear="none"/>
+
+<br clear="none"/>
+　　　　　　　　　　　 <img align="absmiddle" height="69" src="images/0603/image051.gif" width="451"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="page-part" code="part2_4" id="part2_4">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+　　<strong>例6.3.2</strong>　设三元线性方程组为
+<center>
+<img align="absmiddle" height="75" src="images/0603/image052.gif" width="128"/>
+</center>
+　　其增广矩阵为
+<center>
+<img align="absmiddle" height="75" src="images/0603/image005.gif" width="108"/>，</center>
+　　试将此增广矩阵化为行最简形．　<a act="click_open" elm="pa060301.html" href="####" shape="rect" wh="300,210">提示&gt;&gt;</a>
+<br clear="none"/>
+　　<strong>解</strong>　<img align="absmiddle" height="75" src="images/0603/image053.gif" width="444"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　 <img align="absmiddle" height="75" src="images/0603/image056.gif" width="340"/>
+<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　　<img align="absmiddle" height="93" src="images/0603/image057.gif" width="185"/>　<br clear="none"/>
+<br clear="none"/>
+　　　　　　　　　　　　 <img align="absmiddle" height="167" src="images/0603/image059.gif" width="347"/>
+<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+
+
+<div class="page-part" code="part2_5" id="part2_5">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td colspan="1" rowspan="1">
+<br clear="none"/>
+<b>　　课堂练习</b>
+<br clear="none"/>
+　　对矩阵
+<center>
+<img align="absmiddle" height="75" src="images/0603/image061.gif" width="105"/>
+</center>
+　　施行初等行变换，将其化为行最简矩阵．<br clear="none"/>
+　　矩阵<img align="absmiddle" height="75" src="images/0603/image061.gif" width="105"/>的行最简形是<img align="absmiddle" height="75" src="images/0603/image062.gif" width="107"/>，你做对了吗？如果不对请检查一下问题出在哪里．<br clear="none"/>
+</td>
+</tr>
+</table>
+</div>
+
+</div>
+</body>
+</html>
+
